@@ -13,6 +13,7 @@ interface Project {
   span: string; // Tailwind grid col classes for desktop
   aspectRatio: string;
   featured?: boolean;
+  link: string;
 }
 
 const projects: Project[] = [
@@ -27,6 +28,7 @@ const projects: Project[] = [
     span: "md:col-span-2 lg:col-span-8",
     aspectRatio: "aspect-[16/9]",
     featured: true,
+    link: "https://tickeazy.fr",
   },
   {
     id: "campagne-digitale",
@@ -38,6 +40,7 @@ const projects: Project[] = [
     alt: "Analyse et pilotage de campagne digitale haute performance",
     span: "md:col-span-1 lg:col-span-4",
     aspectRatio: "aspect-[4/5]",
+    link: "/realisations/campagne-digitale",
   },
   {
     id: "evenement-corporate",
@@ -49,6 +52,7 @@ const projects: Project[] = [
     alt: "Scène et écrans géants lors d'une conférence internationale",
     span: "md:col-span-1 lg:col-span-4",
     aspectRatio: "aspect-square",
+    link: "/realisations/evenement-corporate",
   },
   {
     id: "production-live",
@@ -61,6 +65,7 @@ const projects: Project[] = [
     span: "md:col-span-2 lg:col-span-8",
     aspectRatio: "aspect-[16/8]",
     featured: true,
+    link: "/realisations/production-live",
   },
   {
     id: "affichage-urbain",
@@ -72,6 +77,7 @@ const projects: Project[] = [
     alt: "Affichage digital dans le centre-ville nocturne",
     span: "md:col-span-1 lg:col-span-4",
     aspectRatio: "aspect-square",
+    link: "/realisations/affichage-urbain",
   },
   {
     id: "branding-beta",
@@ -83,6 +89,7 @@ const projects: Project[] = [
     alt: "Éléments graphiques minimalistes de charte haut de gamme",
     span: "md:col-span-1 lg:col-span-4",
     aspectRatio: "aspect-square",
+    link: "/realisations/branding-beta",
   },
   {
     id: "installation-immersive",
@@ -94,6 +101,7 @@ const projects: Project[] = [
     alt: "Galerie immersive avec projections lumineuses synchronisées",
     span: "md:col-span-2 lg:col-span-4",
     aspectRatio: "aspect-square",
+    link: "/realisations/installation-immersive",
   },
 ];
 
@@ -155,11 +163,13 @@ export default function RealisationsPage() {
               <div
                 className={`${project.aspectRatio} bg-surface-container overflow-hidden relative shadow-sm`}
               >
-                <img
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src={project.image}
-                  alt={project.alt}
-                />
+                <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    src={project.image}
+                    alt={project.alt}
+                  />
+                </Link>
               </div>
               <div className="pt-6">
                 <div className="flex justify-between items-start">
