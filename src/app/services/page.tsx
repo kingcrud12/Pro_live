@@ -3,9 +3,26 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nos Services | PRO LIVE AGENCY",
+  title: "Agence Marketing & Communication Digitale : Nos Services",
   description:
-    "Quatre pôles d'excellence dédiés à votre croissance : Communication, Digital, Marketing et Événementiel.",
+    "Découvrez nos 4 expertises clés à Paris : Stratégie de Marque & Communication, Acquisition Tech & SEO / SEA (Agence Marketing), Création de sites Web sur-mesure (Agence de Communication Digitale) et Production Live Événementielle 4K.",
+  keywords: [
+    "agence marketing services",
+    "agence de communication digitale services",
+    "stratégie de marque paris",
+    "consulting seo sea paris",
+    "développement web sur-mesure",
+    "production événementielle live",
+  ],
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Agence Marketing & Communication Digitale : Nos Services | PRO LIVE",
+    description:
+      "Quatre pôles d'excellence dédiés à votre croissance : Communication Corporate, Marketing Digital ROI, Développement Web et Spectacle Live.",
+    url: "https://www.prolive.agency/services",
+  },
 };
 
 export default function ServicesPage() {

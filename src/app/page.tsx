@@ -10,16 +10,17 @@ export default function Home() {
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 z-10 min-w-0">
             <div className="space-y-4">
               <span className="text-label-bold font-label-bold text-primary tracking-widest uppercase block">
-                Communication • Marketing • Événementiel
+                Agence de Communication Digitale & Agence Marketing • Paris
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-display-lg leading-[1.08] uppercase text-on-surface tracking-tight break-words">
                 L&apos;excellence au service <br />
                 de votre <span className="text-primary">image.</span>
               </h1>
               <p className="text-lg sm:text-xl font-body-lg text-tertiary max-w-2xl leading-relaxed">
-                Définir une voix unique et influente. Nous élaborons des stratégies
-                de communication percutantes et ciblées pour positionner votre marque
-                comme leader incontesté sur son marché.
+                En tant qu&apos;<strong>agence de communication digitale</strong> et{" "}
+                <strong>agence marketing</strong> experte à Paris, nous élaborons des
+                stratégies de communication percutantes, des campagnes d&apos;acquisition à
+                fort ROI et des productions événementielles prestige pour propulser votre marque.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
