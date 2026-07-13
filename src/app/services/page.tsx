@@ -12,12 +12,12 @@ export default function ServicesPage() {
   return (
     <main className="w-full overflow-x-hidden">
       {/* Hero Header */}
-      <section className="px-6 md:px-16 py-20 bg-on-surface text-surface relative overflow-hidden">
+      <section className="px-4 sm:px-6 md:px-16 py-14 sm:py-20 bg-on-surface text-surface relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
           <span className="inline-block bg-primary text-on-primary px-4 py-1 font-label-bold text-label-bold mb-6 uppercase tracking-wider">
             DOMINER LE MARCHÉ
           </span>
-          <h1 className="text-5xl sm:text-6xl md:text-[80px] font-display-lg leading-[1.06] mb-8 uppercase tracking-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-[80px] font-display-lg leading-[1.06] mb-8 uppercase tracking-tight break-words">
             NOS EXPERTISES <br />
             <span className="text-primary">VOTRE IMPACT.</span>
           </h1>
@@ -29,23 +29,23 @@ export default function ServicesPage() {
         </div>
         {/* Atmospheric background element */}
         <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none translate-x-1/4 translate-y-1/4 select-none overflow-hidden">
-          <span className="font-display-lg text-[240px] md:text-[380px] leading-none text-surface">
+          <span className="font-display-lg text-[140px] sm:text-[240px] md:text-[380px] leading-none text-surface">
             PRO
           </span>
         </div>
       </section>
 
       {/* Services Bento Grid */}
-      <section className="px-6 md:px-16 py-24 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
           {/* Communication (Col 1-7) */}
-          <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-8 sm:p-12 flex flex-col justify-between hover-lift min-h-[440px] shadow-sm min-w-0">
+          <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
             <div>
               <div className="flex items-center gap-4 mb-8">
                 <span className="material-symbols-outlined text-4xl text-primary">
                   campaign
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-headline-md uppercase">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
                   Communication
                 </h2>
               </div>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
             <div className="mt-12">
               <Link
                 href="/contact"
-                className="inline-block border-2 border-on-surface px-8 py-3 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all uppercase tracking-wider"
+                className="w-full sm:w-auto inline-block border-2 border-on-surface px-8 py-3 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all uppercase tracking-wider text-center"
               >
                 En savoir plus
               </Link>
@@ -90,13 +90,13 @@ export default function ServicesPage() {
           </div>
 
           {/* Digital (Col 8-12) */}
-          <div className="lg:col-span-5 bg-on-surface text-surface p-8 sm:p-12 hover-lift flex flex-col justify-between min-h-[440px] shadow-sm min-w-0">
+          <div className="lg:col-span-5 bg-on-surface text-surface p-6 sm:p-8 md:p-12 hover-lift flex flex-col justify-between min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
             <div>
               <div className="flex items-center gap-4 mb-8">
                 <span className="material-symbols-outlined text-4xl text-primary">
                   devices
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-headline-md uppercase">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
                   Digital
                 </h2>
               </div>
@@ -119,15 +119,15 @@ export default function ServicesPage() {
                 </li>
               </ul>
             </div>
-            <div className="mt-12 flex justify-between items-end">
+            <div className="mt-12 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
               <Link
                 href="/contact"
-                className="inline-block bg-primary text-on-primary px-8 py-3 font-label-bold text-label-bold hover:bg-primary-container transition-all uppercase tracking-wider shadow-md"
+                className="w-full sm:w-auto inline-block bg-primary text-on-primary px-8 py-3 font-label-bold text-label-bold hover:bg-primary-container transition-all uppercase tracking-wider shadow-md text-center"
               >
                 Lancer un projet
               </Link>
               <span
-                className="material-symbols-outlined text-6xl opacity-20"
+                className="hidden sm:block material-symbols-outlined text-6xl opacity-20"
                 style={{ fontVariationSettings: "'FILL' 1" }}
               >
                 bolt
@@ -136,13 +136,13 @@ export default function ServicesPage() {
           </div>
 
           {/* Marketing (Col 1-5) */}
-          <div className="lg:col-span-5 bg-surface-container p-8 sm:p-12 hover-lift flex flex-col justify-between border-b-4 border-on-surface min-h-[460px] shadow-sm min-w-0">
+          <div className="lg:col-span-5 bg-surface-container p-6 sm:p-8 md:p-12 hover-lift flex flex-col justify-between border-b-4 border-on-surface min-h-0 sm:min-h-[460px] shadow-sm min-w-0">
             <div className="relative overflow-hidden group">
               <div className="flex items-center gap-4 mb-8">
                 <span className="material-symbols-outlined text-4xl text-primary">
                   trending_up
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-headline-md uppercase">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
                   Marketing
                 </h2>
               </div>
@@ -175,7 +175,7 @@ export default function ServicesPage() {
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-block border-2 border-on-surface px-8 py-3 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all uppercase tracking-wider"
+                className="w-full sm:w-auto inline-block border-2 border-on-surface px-8 py-3 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all uppercase tracking-wider text-center"
               >
                 Demander un audit
               </Link>
@@ -183,7 +183,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Événementiel (Col 6-12) */}
-          <div className="lg:col-span-7 relative group overflow-hidden hover-lift bg-primary min-h-[460px] shadow-sm min-w-0 flex flex-col justify-between">
+          <div className="lg:col-span-7 relative group overflow-hidden hover-lift bg-primary min-h-0 sm:min-h-[460px] shadow-sm min-w-0 flex flex-col justify-between">
             <div className="absolute inset-0 z-0">
               <div
                 className="w-full h-full object-cover opacity-35 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 bg-cover bg-center"
@@ -193,13 +193,13 @@ export default function ServicesPage() {
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
             </div>
-            <div className="relative z-10 p-8 sm:p-12 text-on-primary h-full flex flex-col justify-between">
+            <div className="relative z-10 p-6 sm:p-8 md:p-12 text-on-primary h-full flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-4 mb-8">
                   <span className="material-symbols-outlined text-4xl">
                     videocam
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-headline-md uppercase">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
                     Événementiel
                   </h2>
                 </div>
@@ -244,7 +244,7 @@ export default function ServicesPage() {
               <div className="mt-10">
                 <Link
                   href="/contact"
-                  className="inline-block bg-on-surface text-surface px-8 py-3 font-label-bold text-label-bold hover:bg-surface hover:text-on-surface transition-all uppercase tracking-wider shadow-lg"
+                  className="w-full sm:w-auto inline-block bg-on-surface text-surface px-8 py-3 font-label-bold text-label-bold hover:bg-surface hover:text-on-surface transition-all uppercase tracking-wider shadow-lg text-center"
                 >
                   Organiser un événement
                 </Link>

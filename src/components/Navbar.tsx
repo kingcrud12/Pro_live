@@ -22,10 +22,10 @@ export default function Navbar() {
 
   return (
     <header className="bg-surface border-b border-outline-variant flex flex-col justify-between items-center w-full sticky top-0 z-50">
-      <div className="w-full flex justify-between items-center px-4 md:px-16 py-4 mx-auto max-w-7xl">
+      <div className="w-full flex justify-between items-center px-4 sm:px-6 md:px-16 py-4 mx-auto max-w-7xl">
         <Link
           href="/"
-          className="text-3xl font-headline-md text-on-surface tracking-tight font-bold hover:text-primary transition-colors flex items-center"
+          className="text-2xl sm:text-3xl font-headline-md text-on-surface tracking-tight font-bold hover:text-primary transition-colors flex items-center shrink-0"
         >
           PRO LIVE<span className="text-primary">.</span>
         </Link>
@@ -60,10 +60,10 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu toggle */}
-        <div className="flex md:hidden items-center gap-4">
+        <div className="flex md:hidden items-center gap-2 sm:gap-4 shrink-0">
           <Link
             href="/contact"
-            className="bg-on-surface text-surface py-1.5 px-4 text-label-bold font-label-bold text-xs hover:bg-primary transition-all"
+            className="bg-on-surface text-surface py-1.5 px-3 sm:px-4 text-label-bold font-label-bold text-xs hover:bg-primary transition-all"
           >
             DEVIS
           </Link>

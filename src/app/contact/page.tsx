@@ -74,10 +74,10 @@ export default function ContactPage() {
   return (
     <main className="pt-8 w-full bg-surface overflow-x-hidden">
       {/* Hero Section */}
-      <section className="px-6 md:px-16 py-20 bg-surface-container-lowest max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8">
+      <section className="px-4 sm:px-6 md:px-16 py-14 sm:py-20 bg-surface-container-lowest max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 sm:gap-8">
           <div className="w-full lg:w-2/3 min-w-0">
-            <h1 className="text-5xl sm:text-6xl md:text-[76px] font-display-lg text-on-surface uppercase leading-none tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-[76px] font-display-lg text-on-surface uppercase leading-none tracking-tight break-words">
               PARLONS DE<br />
               <span className="text-primary">VOTRE PROJET.</span>
             </h1>
@@ -92,12 +92,12 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Grid (Bento Style) */}
-      <section className="px-6 md:px-16 py-24 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
           {/* Info Column */}
-          <div className="lg:col-span-5 flex flex-col gap-6 min-w-0">
+          <div className="lg:col-span-5 flex flex-col gap-4 sm:gap-6 min-w-0">
             {/* Contact Cards */}
-            <div className="bg-on-surface p-8 text-surface flex flex-col justify-between h-52 group cursor-default shadow-sm">
+            <div className="bg-on-surface p-6 sm:p-8 text-surface flex flex-col justify-between min-h-[160px] sm:h-52 gap-4 group cursor-default shadow-sm">
               <span className="material-symbols-outlined text-primary text-4xl">
                 alternate_email
               </span>
@@ -105,12 +105,12 @@ export default function ContactPage() {
                 <p className="font-label-bold text-label-bold text-surface-variant uppercase tracking-widest mb-1 text-xs">
                   Email
                 </p>
-                <h3 className="text-2xl sm:text-3xl font-headline-md tracking-tight">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-headline-md tracking-tight break-all sm:break-normal">
                   HELLO@PROLIVE.AGENCY
                 </h3>
               </div>
             </div>
-            <div className="bg-surface-container p-8 border border-on-surface/10 flex flex-col justify-between h-52 shadow-sm">
+            <div className="bg-surface-container p-6 sm:p-8 border border-on-surface/10 flex flex-col justify-between min-h-[160px] sm:h-52 gap-4 shadow-sm">
               <span className="material-symbols-outlined text-primary text-4xl">
                 call
               </span>
@@ -118,12 +118,12 @@ export default function ContactPage() {
                 <p className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest mb-1 text-xs">
                   Téléphone
                 </p>
-                <h3 className="text-2xl sm:text-3xl font-headline-md">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-headline-md">
                   +33 (0)1 42 68 55 00
                 </h3>
               </div>
             </div>
-            <div className="bg-surface-container p-8 border border-on-surface/10 flex flex-col justify-between h-52 shadow-sm">
+            <div className="bg-surface-container p-6 sm:p-8 border border-on-surface/10 flex flex-col justify-between min-h-[160px] sm:h-52 gap-4 shadow-sm">
               <span className="material-symbols-outlined text-primary text-4xl">
                 location_on
               </span>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                 <p className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest mb-1 text-xs">
                   Adresse Studio & Bureaux
                 </p>
-                <h3 className="text-xl sm:text-2xl font-headline-md leading-snug">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-headline-md leading-snug">
                   12 RUE DE LA CRÉATION, 75008 PARIS
                 </h3>
               </div>
@@ -139,12 +139,12 @@ export default function ContactPage() {
           </div>
 
           {/* Form Column */}
-          <div className="lg:col-span-7 bg-surface border border-on-surface/20 p-8 sm:p-12 shadow-sm min-w-0">
-            <div className="flex items-center justify-between mb-8">
-              <h2 className="text-3xl sm:text-4xl font-headline-lg uppercase tracking-tight">
+          <div className="lg:col-span-7 bg-surface border border-on-surface/20 p-6 sm:p-8 md:p-12 shadow-sm min-w-0">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-lg uppercase tracking-tight">
                 Envoyez un message
               </h2>
-              <div className="flex items-center gap-1.5 bg-surface-container-high px-3 py-1 rounded-none border border-on-surface/10" title="Protection Anti-XSS & Injection de Script activée">
+              <div className="flex items-center gap-1.5 bg-surface-container-high px-3 py-1 rounded-none border border-on-surface/10 self-start sm:self-auto" title="Protection Anti-XSS & Injection de Script activée">
                 <span className="material-symbols-outlined text-primary text-base">verified_user</span>
                 <span className="text-xs font-label-bold uppercase tracking-wider text-secondary">Anti-XSS Shield</span>
               </div>
@@ -268,19 +268,19 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="px-6 md:px-16 py-24 max-w-7xl mx-auto">
-        <div className="relative h-[500px] sm:h-[580px] w-full grayscale hover:grayscale-0 transition-all duration-700 border border-on-surface/20 overflow-hidden shadow-lg">
+      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
+        <div className="relative h-[380px] sm:h-[500px] md:h-[580px] w-full grayscale hover:grayscale-0 transition-all duration-700 border border-on-surface/20 overflow-hidden shadow-lg">
           <div className="absolute inset-0 bg-on-surface/10 z-10 pointer-events-none"></div>
           <img
             className="w-full h-full object-cover"
             src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80"
             alt="Siège social moderne de Pro Live Agency à Paris"
           />
-          <div className="absolute top-6 left-6 bg-on-surface text-surface p-8 z-20 max-w-sm shadow-xl">
-            <h4 className="text-3xl font-headline-md mb-3 tracking-tight">
+          <div className="absolute top-4 left-4 right-4 sm:right-auto sm:top-6 sm:left-6 bg-on-surface text-surface p-6 sm:p-8 z-20 sm:max-w-sm shadow-xl">
+            <h4 className="text-2xl sm:text-3xl font-headline-md mb-3 tracking-tight">
               SIÈGE SOCIAL PARIS
             </h4>
-            <p className="text-base font-body-md opacity-85 leading-relaxed">
+            <p className="text-sm sm:text-base font-body-md opacity-85 leading-relaxed">
               Notre studio créatif est situé au cœur de Paris (8ème arrondissement). Venez nous
               rencontrer autour d&apos;un café pour discuter de vos ambitions et découvrir notre showroom technique.
             </p>
@@ -289,23 +289,23 @@ export default function ContactPage() {
       </section>
 
       {/* Atmosphere Section */}
-      <section className="bg-on-surface py-24 overflow-hidden relative">
-        <div className="px-6 md:px-16 relative z-10 flex flex-col items-center text-center">
-          <h2 className="text-4xl sm:text-6xl md:text-[80px] font-display-lg text-surface opacity-10 leading-none select-none mb-6 uppercase tracking-wider">
+      <section className="bg-on-surface py-16 sm:py-24 overflow-hidden relative">
+        <div className="px-4 sm:px-6 md:px-16 relative z-10 flex flex-col items-center text-center">
+          <h2 className="text-3xl sm:text-6xl md:text-[80px] font-display-lg text-surface opacity-10 leading-none select-none mb-6 uppercase tracking-wider break-words">
             KINETIC ENERGY
           </h2>
           <div className="max-w-3xl">
-            <p className="text-3xl sm:text-4xl font-headline-md text-surface mb-8 uppercase tracking-tight">
+            <p className="text-2xl sm:text-4xl font-headline-md text-surface mb-8 uppercase tracking-tight">
               PRÊT À ACCÉLÉRER ?
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
-              <span className="bg-primary text-on-primary font-label-bold px-8 py-3 uppercase tracking-widest text-sm shadow-md">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
+              <span className="bg-primary text-on-primary font-label-bold px-5 sm:px-8 py-2.5 sm:py-3 uppercase tracking-widest text-xs sm:text-sm shadow-md">
                 MARKETING
               </span>
-              <span className="bg-surface text-on-surface font-label-bold px-8 py-3 uppercase tracking-widest text-sm shadow-md">
+              <span className="bg-surface text-on-surface font-label-bold px-5 sm:px-8 py-2.5 sm:py-3 uppercase tracking-widest text-xs sm:text-sm shadow-md">
                 DIGITAL
               </span>
-              <span className="bg-primary text-on-primary font-label-bold px-8 py-3 uppercase tracking-widest text-sm shadow-md">
+              <span className="bg-primary text-on-primary font-label-bold px-5 sm:px-8 py-2.5 sm:py-3 uppercase tracking-widest text-xs sm:text-sm shadow-md">
                 ÉVÉNEMENTIEL
               </span>
             </div>

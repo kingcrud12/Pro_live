@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-on-surface text-surface-variant w-full mt-auto border-t border-surface/10 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-16 pt-20 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16 pt-12 sm:pt-20 pb-8 sm:pb-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-surface/15">
           {/* Brand & Tagline */}
@@ -12,7 +12,7 @@ export default function Footer() {
             <div>
               <Link
                 href="/"
-                className="text-4xl sm:text-5xl font-headline-md text-surface uppercase tracking-tight block hover:text-primary transition-colors font-bold"
+                className="text-3xl sm:text-5xl font-headline-md text-surface uppercase tracking-tight block hover:text-primary transition-colors font-bold break-words"
               >
                 PRO LIVE<span className="text-primary">.</span>
               </Link>
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation Columns */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 min-w-0">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 min-w-0">
             {/* Column 1: Expertises */}
             <div className="flex flex-col gap-3 min-w-0">
               <span className="text-label-bold font-label-bold text-primary uppercase tracking-widest text-xs">
@@ -129,7 +129,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 gap-4 text-xs sm:text-sm text-surface/50 font-label-bold uppercase tracking-wider">
+        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 gap-4 text-xs sm:text-sm text-surface/50 font-label-bold uppercase tracking-wider text-center sm:text-left">
           <p>© 2024 PRO LIVE AGENCY. TOUS DROITS RÉSERVÉS.</p>
           <p>CONÇU ET DÉVELOPPÉ PAR PRO LIVE DIGITAL AGENCY • PARIS</p>
         </div>

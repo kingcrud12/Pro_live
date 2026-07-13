@@ -23,6 +23,12 @@ export const metadata: Metadata = {
   description: "Agence créative & technique haute performance. Nous fusionnons stratégie créative et exécution technique pour propulser votre marque avec un impact direct et mesurable.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,7 +42,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen flex flex-col font-body-md bg-background text-on-background">
+      <body className="min-h-screen flex flex-col font-body-md bg-background text-on-background overflow-x-hidden">
         <Navbar />
         <div className="flex-grow">{children}</div>
         <Footer />
@@ -44,3 +50,4 @@ export default function RootLayout({
     </html>
   );
 }
+
