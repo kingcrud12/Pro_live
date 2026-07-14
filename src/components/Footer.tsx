@@ -29,10 +29,10 @@ export default function Footer() {
 
           {/* Navigation Columns */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 min-w-0">
-            {/* Column 1: Expertises */}
+            {/* Column 1: Nos Services */}
             <div className="flex flex-col gap-3 min-w-0">
               <span className="text-label-bold font-label-bold text-primary uppercase tracking-widest text-xs">
-                EXPERTISES
+                NOS SERVICES
               </span>
               <Link
                 href="/services"
@@ -44,19 +44,31 @@ export default function Footer() {
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Marketing Digital
+                Marketing
               </Link>
               <Link
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Événementiel & Live
+                Digital
               </Link>
               <Link
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Branding & 360°
+                Audiovisuel
+              </Link>
+              <Link
+                href="/services"
+                className="text-base text-surface/80 hover:text-primary transition-colors"
+              >
+                Événementiel
+              </Link>
+              <Link
+                href="/services"
+                className="text-base text-surface/80 hover:text-primary transition-colors"
+              >
+                Hôtesses et Hôtes de luxe
               </Link>
             </div>
 

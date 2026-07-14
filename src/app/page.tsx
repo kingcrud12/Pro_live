@@ -40,8 +40,9 @@ export default function Home() {
               L&apos;AGENCE
             </h2>
             <p className="text-lg font-body-lg text-tertiary leading-relaxed">
-              <strong>Pro Live Agency</strong> <strong></strong> accompagne les marques, les entreprises et
-              les entrepreneurs dans leur croissance grâce à des solutions créatives et performantes.
+              <strong>Pro Live Agency</strong> accompagne les marques, les entreprises et les entrepreneurs dans leur croissance grâce à des solutions créatives et performantes.<br />
+              Nous organisons et assurons la coordination et la gestion de grands événements professionnels et privés.<br />
+              Nous mettons notre expertise afin de créer des événements uniques, élégants et parfaitement orchestrés.<br /> Chez Pro-live agency, chaque évènement est conçu sur mesure pour répondre aux objectifs et marquer durablement les invités.
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="border-l-2 border-primary pl-4">
@@ -291,7 +292,7 @@ export default function Home() {
               href="/contact"
               className="w-full sm:w-auto border-2 border-surface text-surface px-8 py-4 font-label-bold text-label-bold hover:bg-surface hover:text-primary transition-all tracking-wider uppercase inline-block text-center"
             >
-              NOUS APPELER
+              NOUS CONTACTER
             </Link>
           </div>
         </div>
