@@ -109,8 +109,8 @@ export default function Footer() {
                 STUDIO PARIS
               </span>
               <p className="text-sm text-surface/80 leading-relaxed">
-                12 Rue de la Création<br />
-                75008 Paris, France
+                12 Rue de l'ingénieur robert keller<br />
+                75015 Paris, France
               </p>
               <a
                 href="mailto:Info@pro-live-agency.com"
