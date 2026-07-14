@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main className="w-full overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative bg-surface min-h-[88vh] flex flex-col justify-center">
-        <div className="px-4 sm:px-6 md:px-12 lg:px-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 xl:gap-16 items-center py-10 sm:py-14 lg:py-20 max-w-[1440px] mx-auto">
+      <section className="relative bg-surface pt-6 sm:pt-8 md:pt-10 pb-8 sm:pb-12">
+        <div className="px-4 sm:px-6 md:px-12 lg:px-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center max-w-[1440px] mx-auto">
           <div className="lg:col-span-5 xl:col-span-5 space-y-5 sm:space-y-6 z-10 min-w-0">
             <div className="space-y-3.5">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[54px] font-display-lg leading-[1.12] uppercase text-on-surface tracking-tight break-words">
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
 
       {/* About Agency */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 md:px-16 bg-surface-container-low relative max-w-7xl mx-auto">
+      <section className="pt-8 sm:pt-12 pb-16 sm:pb-24 px-4 sm:px-6 md:px-16 bg-surface-container-low relative max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12 sm:gap-16">
           <div className="w-full lg:w-1/2 space-y-6 min-w-0">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline-lg text-on-surface uppercase tracking-tight break-words">
