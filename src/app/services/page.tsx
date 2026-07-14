@@ -35,7 +35,7 @@ export default function ServicesPage() {
             DOMINER LE MARCHÉ
           </span>
           <h1 className="text-4xl sm:text-6xl md:text-[80px] font-display-lg leading-[1.06] mb-8 uppercase tracking-tight break-words">
-            NOS EXPERTISES <br />
+            NOS SERVICES <br />
             <span className="text-primary">VOTRE IMPACT.</span>
           </h1>
           <p className="text-lg sm:text-xl font-body-lg max-w-2xl text-surface-variant leading-relaxed">

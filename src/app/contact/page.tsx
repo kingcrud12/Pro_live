@@ -146,7 +146,7 @@ export default function ContactPage() {
               </h2>
               <div className="flex items-center gap-1.5 bg-surface-container-high px-3 py-1 rounded-none border border-on-surface/10 self-start sm:self-auto" title="Protection Anti-XSS & Injection de Script activée">
                 <span className="material-symbols-outlined text-primary text-base">verified_user</span>
-                <span className="text-xs font-label-bold uppercase tracking-wider text-secondary">Anti-XSS Shield</span>
+                <span className="text-xs font-label-bold uppercase tracking-wider text-tertiary">Anti-XSS Shield</span>
               </div>
             </div>
 

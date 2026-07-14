@@ -40,7 +40,7 @@ const projects: Project[] = [
     alt: "Analyse et pilotage de campagne digitale haute performance",
     span: "md:col-span-1 lg:col-span-4",
     aspectRatio: "aspect-[4/5]",
-    link: "/realisations/campagne-digitale",
+    link: "https://tickeazy.fr",
   },
   {
     id: "evenement-corporate",
@@ -127,7 +127,7 @@ export default function RealisationsPage() {
             <h1 className="font-display-lg text-4xl sm:text-6xl md:text-[76px] uppercase leading-none mb-6 tracking-tight break-words">
               Nos <span className="text-primary">Réalisations</span>.
             </h1>
-            <p className="text-lg sm:text-xl font-body-lg text-secondary max-w-2xl leading-relaxed">
+            <p className="text-lg sm:text-xl font-body-lg text-tertiary max-w-2xl leading-relaxed">
               Découvrez comment nous donnons vie aux ambitions les plus audacieuses. Une sélection de
               projets alliant stratégie, créativité d&apos;exception et maîtrise technique haute précision.
             </p>
@@ -141,7 +141,7 @@ export default function RealisationsPage() {
                   onClick={() => setFilter(tab)}
                   className={`text-label-bold font-label-bold px-3 sm:px-4 py-2 transition-all cursor-pointer text-xs sm:text-sm tracking-wider uppercase flex-1 sm:flex-none text-center ${active
                     ? "bg-primary text-on-primary font-bold shadow-md"
-                    : "bg-surface-container text-secondary hover:text-on-surface hover:bg-surface-container-high"
+                    : "bg-surface-container text-tertiary hover:text-on-surface hover:bg-surface-container-high"
                     }`}
                 >
                   {tab}

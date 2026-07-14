@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -12,12 +13,13 @@ export default function Footer() {
             <div>
               <Link
                 href="/"
-                className="text-3xl sm:text-5xl font-headline-md text-surface uppercase tracking-tight block hover:text-primary transition-colors font-bold break-words"
+                className="inline-block hover:opacity-90 transition-opacity mb-2"
+                aria-label="PRO LIVE. AGENCY - Accueil"
               >
-                PRO LIVE<span className="text-primary">.</span>
+                <Logo className="h-14 sm:h-18 md:h-20 w-auto" variant="light" />
               </Link>
               <p className="text-lg sm:text-xl font-body-lg text-surface/90 mt-4 max-w-md leading-relaxed">
-                L&apos;excellence au service de votre image.
+                Donner vie à vos idées, créer des expériences mémorables.
               </p>
               <p className="text-sm text-surface/60 mt-3 max-w-sm leading-normal">
                 Stratégies de communication percutantes, création de marque et productions événementielles haute précision.

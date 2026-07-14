@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -25,9 +26,10 @@ export default function Navbar() {
       <div className="w-full flex justify-between items-center px-4 sm:px-6 md:px-16 py-4 mx-auto max-w-7xl">
         <Link
           href="/"
-          className="text-2xl sm:text-3xl font-headline-md text-on-surface tracking-tight font-bold hover:text-primary transition-colors flex items-center shrink-0"
+          className="flex items-center shrink-0 hover:opacity-90 transition-opacity"
+          aria-label="PRO LIVE. AGENCY - Accueil"
         >
-          PRO LIVE<span className="text-primary">.</span>
+          <Logo className="h-10 sm:h-12 md:h-14 w-auto" variant="dark" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -50,23 +52,7 @@ export default function Navbar() {
           })}
         </nav>
 
-        <div className="hidden md:block">
-          <Link
-            href="/contact"
-            className="bg-on-surface text-surface py-2 px-6 text-label-bold font-label-bold hover:bg-primary transition-all active:scale-95 inline-block"
-          >
-            DEVIS
-          </Link>
-        </div>
-
-        {/* Mobile menu toggle */}
-        <div className="flex md:hidden items-center gap-2 sm:gap-4 shrink-0">
-          <Link
-            href="/contact"
-            className="bg-on-surface text-surface py-1.5 px-3 sm:px-4 text-label-bold font-label-bold text-xs hover:bg-primary transition-all"
-          >
-            DEVIS
-          </Link>
+        <div className="flex md:hidden items-center shrink-0">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-1 text-on-surface hover:text-primary focus:outline-none"

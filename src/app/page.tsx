@@ -1,97 +1,98 @@
 import React from "react";
 import Link from "next/link";
+import AgencyCarousel from "@/components/AgencyCarousel";
 
 export default function Home() {
   return (
     <main className="w-full overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative bg-surface min-h-[88vh] flex flex-col justify-center">
-        <div className="px-4 sm:px-6 md:px-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-center py-12 sm:py-16 lg:py-24 max-w-7xl mx-auto">
-          <div className="lg:col-span-7 space-y-6 sm:space-y-8 z-10 min-w-0">
-            <div className="space-y-4">
-              <span className="text-label-bold font-label-bold text-primary tracking-widest uppercase block">
+        <div className="px-4 sm:px-6 md:px-12 lg:px-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 xl:gap-16 items-center py-10 sm:py-14 lg:py-20 max-w-[1440px] mx-auto">
+          <div className="lg:col-span-5 xl:col-span-5 space-y-5 sm:space-y-6 z-10 min-w-0">
+            <div className="space-y-3.5">
+              <span className="text-xs sm:text-sm font-label-bold text-primary tracking-widest uppercase block">
                 Agence de Communication Digitale & Agence Marketing • Paris
               </span>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-display-lg leading-[1.08] uppercase text-on-surface tracking-tight break-words">
-                L&apos;excellence au service <br />
-                de votre <span className="text-primary">image.</span>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[54px] font-display-lg leading-[1.12] uppercase text-on-surface tracking-tight break-words">
+                Donner vie à vos <span className="text-primary">idées,</span> <br />
+                créer des expériences <span className="text-primary">mémorables.</span>
               </h1>
-              <p className="text-lg sm:text-xl font-body-lg text-tertiary max-w-2xl leading-relaxed">
+              <p className="text-base sm:text-lg font-body-lg text-tertiary max-w-xl leading-relaxed">
                 En tant qu&apos;<strong>agence de communication digitale</strong> et{" "}
                 <strong>agence marketing</strong> experte à Paris, nous élaborons des
                 stratégies de communication percutantes, des campagnes d&apos;acquisition à
                 fort ROI et des productions événementielles prestige pour propulser votre marque.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row gap-3.5 pt-1">
               <Link
                 href="/realisations"
-                className="w-full sm:w-auto bg-on-surface text-surface px-8 py-4 font-label-bold text-label-bold hover:bg-primary transition-all duration-300 text-center tracking-wider uppercase"
+                className="w-full sm:w-auto bg-on-surface text-surface px-6 py-3.5 font-label-bold text-xs sm:text-sm hover:bg-primary transition-all duration-300 text-center tracking-wider uppercase shadow-sm"
               >
                 VOIR NOS PROJETS
               </Link>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto border-2 border-on-surface text-on-surface px-8 py-4 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all duration-300 text-center tracking-wider uppercase"
+                className="w-full sm:w-auto border-2 border-on-surface text-on-surface px-6 py-3.5 font-label-bold text-xs sm:text-sm hover:bg-on-surface hover:text-surface transition-all duration-300 text-center tracking-wider uppercase"
               >
                 CONTACTEZ-NOUS
               </Link>
             </div>
           </div>
 
-          <div className="lg:col-span-5 relative w-full h-[280px] sm:h-[380px] md:h-[460px] lg:h-[560px] transition-all duration-700">
-            <img
-              alt="L'excellence au service de votre image - Pro Live Agency"
-              className="w-full h-full object-cover shadow-2xl border border-on-surface/10"
-              src="/images/hero.jpg"
-            />
-            {/* Accent Box */}
-            <div className="absolute -bottom-6 -left-6 bg-primary w-24 h-24 hidden sm:block shadow-lg"></div>
+          <div className="lg:col-span-7 xl:col-span-7 relative w-full transition-all duration-700 pt-4 lg:pt-0">
+            <div className="relative w-full">
+              <img
+                alt="Donner vie à vos idées, créer des expériences mémorables - Pro Live Agency"
+                className="w-full h-auto object-contain shadow-2xl border border-on-surface/15 bg-surface-container/30 transition-transform duration-500 hover:scale-[1.01]"
+                src="/images/hero.jpg"
+              />
+              {/* Accent Boxes */}
+              <div className="absolute -bottom-6 -left-6 bg-primary w-28 h-28 hidden sm:block shadow-xl -z-10 transition-transform duration-500"></div>
+              <div className="absolute -top-6 -right-6 border-2 border-primary w-24 h-24 hidden lg:block -z-10"></div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* About Agency */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 md:px-16 bg-on-surface text-surface">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 sm:gap-16 lg:gap-20 items-center">
-          <div className="w-full lg:w-1/2 min-w-0">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline-lg mb-6 uppercase tracking-tight break-words">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 md:px-16 bg-surface-container-low relative max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-12 sm:gap-16">
+          <div className="w-full lg:w-1/2 space-y-6 min-w-0">
+            <span className="text-label-bold font-label-bold text-primary tracking-widest uppercase block">
+              • À Propos
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline-lg text-on-surface uppercase tracking-tight break-words">
               L&apos;AGENCE
             </h2>
-            <p className="text-lg sm:text-xl font-body-lg text-surface-variant opacity-80 leading-relaxed">
-              Chez PRO LIVE., nous ne nous contentons pas de produire ; nous
-              créons de l&apos;impact. Basés au cœur de l&apos;innovation, nous
-              accompagnons les entreprises dans leur transformation digitale et
-              événementielle. Notre équipe multidisciplinaire allie rigueur
-              stratégique et audace artistique.
+            <p className="text-lg font-body-lg text-tertiary leading-relaxed">
+              <strong>Pro Live Agency</strong> est née d&apos;une conviction : la
+              communication moderne nécessite une alliance parfaite entre art,
+              technologie et stratégie. Nous fusionnons la rigueur d&apos;un
+              cabinet de conseil marketing avec l&apos;audace créative et la maîtrise
+              technique d&apos;un studio de production live.
             </p>
-            <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-8">
-              <div className="border-l-4 border-primary pl-4 sm:pl-6 py-1">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-headline-md text-primary leading-none mb-2">
+            <div className="grid grid-cols-2 gap-6 pt-4">
+              <div className="border-l-2 border-primary pl-4">
+                <span className="block text-3xl sm:text-4xl font-display-lg text-on-surface">
                   30+
-                </div>
-                <div className="font-label-bold text-label-bold opacity-60 uppercase tracking-wider text-xs sm:text-sm">
+                </span>
+                <span className="text-sm text-tertiary uppercase font-label-bold tracking-wider">
                   Projets Livrés
-                </div>
+                </span>
               </div>
-              <div className="border-l-4 border-primary pl-4 sm:pl-6 py-1">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-headline-md text-primary leading-none mb-2">
+              <div className="border-l-2 border-primary pl-4">
+                <span className="block text-3xl sm:text-4xl font-display-lg text-on-surface">
                   100%
-                </div>
-                <div className="font-label-bold text-label-bold opacity-60 uppercase tracking-wider text-xs sm:text-sm">
-                  Engagement
-                </div>
+                </span>
+                <span className="text-sm text-tertiary uppercase font-label-bold tracking-wider">
+                  Engagement &amp; Qualité
+                </span>
               </div>
             </div>
           </div>
           <div className="w-full lg:w-1/2 relative">
-            <div className="bg-surface-container-low h-[280px] sm:h-[360px] lg:h-[420px] w-full flex items-center justify-center p-4 sm:p-6 shadow-xl">
-              <img
-                alt="Bureau et studio moderne de Pro Live Agency"
-                className="w-full h-full object-cover"
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80"
-              />
-            </div>
+            <AgencyCarousel />
           </div>
         </div>
       </section>
@@ -100,7 +101,7 @@ export default function Home() {
       <section className="py-16 sm:py-24 px-4 sm:px-6 md:px-16 bg-surface max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline-lg text-on-surface uppercase mb-4 tracking-tight break-words">
-            NOS EXPERTISES
+            NOS SERVICES
           </h2>
           <div className="w-24 h-2 bg-primary mx-auto"></div>
         </div>
