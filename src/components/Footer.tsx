@@ -101,10 +101,10 @@ export default function Footer() {
                 75008 Paris, France
               </p>
               <a
-                href="mailto:hello@prolive.agency"
+                href="mailto:Info@pro-live-agency.com"
                 className="text-sm text-primary hover:underline font-label-bold mt-1 block"
               >
-                hello@prolive.agency
+                Info@pro-live-agency.com
               </a>
               <div className="flex gap-4 pt-2">
                 <Link

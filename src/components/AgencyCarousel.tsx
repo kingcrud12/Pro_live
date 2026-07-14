@@ -130,7 +130,7 @@ export default function AgencyCarousel() {
 
   return (
     <div
-      className="bg-surface-container-low h-[280px] sm:h-[360px] lg:h-[420px] w-full flex items-center justify-center p-4 sm:p-6 shadow-xl relative overflow-hidden border border-surface/10"
+      className="h-[280px] sm:h-[360px] lg:h-[420px] w-full relative overflow-hidden shadow-xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -141,21 +141,30 @@ export default function AgencyCarousel() {
           return (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              className={`absolute inset-0 transition-all duration-1000 ease-in-out flex items-center justify-center overflow-hidden bg-on-surface/95 ${
                 isActive ? "opacity-100 z-10 scale-100" : "opacity-0 z-0 scale-105"
               }`}
             >
+              {/* Blurred background image to fill extra space around object-contain with ambient color */}
+              <img
+                src={slide.src}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 pointer-events-none"
+              />
+
+              {/* Main un-zoomed, 100% visible photo without any cropping */}
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="w-full h-full object-cover transition-transform duration-700"
+                className="relative z-0 max-w-full max-h-full w-full h-full object-contain transition-transform duration-700"
               />
 
-              {/* Keyword text overlay directly over first images of duos (No box/frame, No pôles) */}
+              {/* Keyword text overlay directly over first images of duos (No box/frame, No pôles, No dark screen) */}
               {slide.title && (
-                <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center p-4 z-10 pointer-events-none transition-opacity duration-500">
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 z-10 pointer-events-none transition-opacity duration-500">
                   <div className="text-center space-y-2.5">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-headline-lg uppercase text-white tracking-wider drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-headline-lg uppercase text-white tracking-wider drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">
                       {slide.title}
                     </h3>
                     <div className="w-12 sm:w-14 h-1 bg-primary mx-auto shadow-md"></div>
@@ -166,8 +175,8 @@ export default function AgencyCarousel() {
           );
         })}
 
-        {/* Overlay gradient for controls visibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-on-surface/50 via-transparent to-transparent opacity-60 z-15 pointer-events-none" />
+        {/* Subtle overlay gradient at the bottom just for indicators visibility without darkening images */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-30 z-15 pointer-events-none" />
 
         {/* Left Arrow */}
         <button
@@ -209,13 +218,6 @@ export default function AgencyCarousel() {
               />
             );
           })}
-        </div>
-
-        {/* Active Section & Slide Counter Pill */}
-        <div className="absolute top-3 right-3 z-20 bg-on-surface/85 text-surface text-xs font-label-bold px-3 py-1.5 uppercase tracking-wider shadow-md flex items-center gap-2">
-          <span className="text-primary font-bold">•</span>
-          <span>{sections[currentSectionIndex]?.name || "Pro Live"}</span>
-          <span className="opacity-60 font-mono text-[11px]">({currentIndex + 1}/{slides.length})</span>
         </div>
       </div>
     </div>

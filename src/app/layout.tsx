@@ -104,7 +104,7 @@ export default function RootLayout({
     description:
       "Agence marketing et agence de communication digitale basée à Paris. Nous accompagnons les entreprises dans leur stratégie de marque, leurs campagnes d'acquisition digitales et leurs productions événementielles prestige.",
     telephone: "+33142685500",
-    email: "hello@prolive.agency",
+    email: "Info@pro-live-agency.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "12 RUE DE LA CRÉATION",

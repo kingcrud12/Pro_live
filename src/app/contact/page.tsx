@@ -106,7 +106,7 @@ export default function ContactPage() {
                   Email
                 </p>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-headline-md tracking-tight break-all sm:break-normal">
-                  HELLO@PROLIVE.AGENCY
+                  Info@pro-live-agency.com
                 </h3>
               </div>
             </div>

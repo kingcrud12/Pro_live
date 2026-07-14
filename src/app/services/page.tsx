@@ -268,6 +268,206 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
+
+          {/* Audiovisuel (Col 1-7) */}
+          <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="material-symbols-outlined text-4xl text-primary">
+                  movie
+                </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
+                  Audiovisuel
+                </h2>
+              </div>
+              <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
+                Captation vidéo 4K, réalisation cinématographique et post-production de prestige. Nous concevons et réalisons des contenus audiovisuels percutants adaptés à votre stratégie de communication.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Captation Multi-caméras
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Enregistrement UHD et régie vidéo en direct
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Réalisation Cinéma
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Clips institutionnels, films d&apos;entreprise &amp; publicités
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Post-Production
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Montage, étalonnage professionnel et sound design
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Motion Design
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Animations 2D/3D et habillages dynamiques
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-12 pt-8 border-t border-on-surface/10 flex items-center justify-between flex-wrap gap-4">
+              <span className="font-label-bold text-label-bold uppercase tracking-widest text-primary">
+                Production • Captation • Studio
+              </span>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 font-label-bold text-label-bold text-on-surface hover:text-primary transition-colors"
+              >
+                DISCUTER DE VOTRE PROJET AUDIOVISUEL <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 bg-surface-container-highest p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0 border border-on-surface/5">
+            <div className="flex justify-between items-start mb-8">
+              <span className="material-symbols-outlined text-4xl text-primary">
+                videocam
+              </span>
+              <span className="text-6xl md:text-7xl font-headline-lg text-on-surface/10 font-bold">
+                05
+              </span>
+            </div>
+            <div className="my-6 w-full overflow-hidden">
+              <img
+                alt="Audiovisuel et production vidéo Pro Live Agency"
+                className="w-full h-auto object-contain"
+                src="/images/image_8.jpg"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-headline-md uppercase mb-2">
+                Excellence Visuelle
+              </h3>
+              <p className="text-sm text-tertiary">
+                Des moyens techniques d&apos;exception pour sublimer votre image de marque sur tous les écrans.
+              </p>
+            </div>
+          </div>
+
+          {/* Hôtesses et hôtes de luxes (Col 1-5 Box / 6-12 Details) */}
+          <div className="lg:col-span-5 bg-on-surface text-surface p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
+            <div className="flex justify-between items-start mb-8">
+              <span className="material-symbols-outlined text-4xl text-primary">
+                groups
+              </span>
+              <span className="text-6xl md:text-7xl font-headline-lg text-surface/10 font-bold">
+                06
+              </span>
+            </div>
+            <div className="my-6 w-full overflow-hidden">
+              <img
+                alt="Hôtesses et hôtes de luxes VIP Pro Live Agency"
+                className="w-full h-auto object-contain"
+                src="/images/image_12.jpg"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-headline-md uppercase text-surface mb-2">
+                Accueil d&apos;Excellence, image & représentation
+              </h3>
+              <p className="text-sm text-surface-variant">
+                Un protocole rigoureusement orchestré pour représenter votre marque avec la plus haute distinction.
+              </p>
+            </div>
+          </div>
+
+          <div className="lg:col-span-7 bg-surface-container border-r-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="material-symbols-outlined text-4xl text-primary">
+                  workspace_premium
+                </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
+                  Hôtesses et Hôtes de Luxes
+                </h2>
+              </div>
+              <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
+                &
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Accueil d&apos;Excellence, image & représentation
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Accueil d&apos;Excellence, image & représentation
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Événements Prestige
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Galas, défilés de mode, salons privés et lancements de produits
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Multilinguisme
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Personnel maîtrisant plusieurs langues pour clientèle internationale
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Coordination Sur-Mesure
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Tenues élégantes adaptées à l&apos;image de votre marque
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-12 pt-8 border-t border-on-surface/10 flex items-center justify-between flex-wrap gap-4">
+              <span className="font-label-bold text-label-bold uppercase tracking-widest text-primary">
+                VIP • Protocole • Prestige
+              </span>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 font-label-bold text-label-bold text-on-surface hover:text-primary transition-colors"
+              >
+                RÉSERVER NOS ÉQUIPES D&apos;ACCUEIL <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </main>
