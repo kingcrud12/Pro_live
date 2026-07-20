@@ -38,19 +38,13 @@ export default function Footer() {
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Communication
+                Événementiel
               </Link>
               <Link
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Marketing
-              </Link>
-              <Link
-                href="/services"
-                className="text-base text-surface/80 hover:text-primary transition-colors"
-              >
-                Digital
+                Hôtesses et Hôtes de luxe
               </Link>
               <Link
                 href="/services"
@@ -62,13 +56,13 @@ export default function Footer() {
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Événementiel
+                Digital
               </Link>
               <Link
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Hôtesses et Hôtes de luxe
+                Communication
               </Link>
             </div>
 
@@ -109,7 +103,7 @@ export default function Footer() {
                 STUDIO PARIS
               </span>
               <p className="text-sm text-surface/80 leading-relaxed">
-                12 Rue de l'ingénieur robert keller<br />
+                12 Rue de l&apos;ingénieur robert keller<br />
                 75015 Paris, France
               </p>
               <a

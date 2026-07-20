@@ -231,7 +231,6 @@ export default function ContactPage() {
                     className="bg-transparent border-b border-on-surface/40 py-3 focus:outline-none focus:border-primary transition-colors text-base appearance-none cursor-pointer"
                   >
                     <option>Communication & Stratégie de Marque</option>
-                    <option>Marketing Digital & Acquisition</option>
                     <option>Développement Web & UX/UI Digital</option>
                     <option>Production Événementielle & Audiovisuel</option>
                     <option>Autre projet sur-mesure</option>
@@ -300,7 +299,7 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
               <span className="bg-primary text-on-primary font-label-bold px-5 sm:px-8 py-2.5 sm:py-3 uppercase tracking-widest text-xs sm:text-sm shadow-md">
-                MARKETING
+                COMMUNICATION
               </span>
               <span className="bg-surface text-on-surface font-label-bold px-5 sm:px-8 py-2.5 sm:py-3 uppercase tracking-widest text-xs sm:text-sm shadow-md">
                 DIGITAL

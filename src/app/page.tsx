@@ -40,8 +40,8 @@ export default function Home() {
               L&apos;AGENCE
             </h2>
             <p className="text-lg font-body-lg text-tertiary leading-relaxed">
-              <strong>Pro Live Agency</strong> accompagne les marques, les entreprises et les entrepreneurs dans leur croissance grâce à des solutions créatives et performantes.<br />
-              Nous organisons et assurons la coordination et la gestion de grands événements professionnels et privés.<br />
+              <strong>Pro Live Agency</strong> est un professionnel dans l'organisation et la gestion de grands événements privés et professionnels.
+              <br />Nous accomagnons les marques, les entreprises et les entrepreneurs dans leur croissance grâce à des solutions créatives et performantes.<br />
               Nous mettons notre expertise afin de créer des événements uniques, élégants et parfaitement orchestrés.<br /> Chez Pro-live agency, chaque évènement est conçu sur mesure pour répondre aux objectifs et marquer durablement les invités.
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
@@ -79,107 +79,17 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-6">
-          {/* Communication */}
-          <Link
-            href="/services"
-            className="md:col-span-2 lg:col-span-2 lg:row-span-1 bg-surface-container-high p-6 sm:p-8 md:p-12 flex flex-col justify-between hover:bg-primary group transition-all duration-500 min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
-          >
-            <div className="flex justify-between items-start">
-              <span className="material-symbols-outlined text-primary group-hover:text-surface text-4xl transition-colors">
-                campaign
-              </span>
-              <span className="font-label-bold text-label-bold text-on-surface group-hover:text-surface transition-colors">
-                01
-              </span>
-            </div>
-            <div className="my-6 w-full overflow-hidden">
-              <img
-                alt="Studio et équipe Pro Live Agency en action - Communication"
-                className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_1.jpg"
-              />
-            </div>
-            <div className="mt-4">
-              <h3 className="text-2xl sm:text-3xl font-headline-md text-on-surface group-hover:text-surface mb-3 uppercase transition-colors">
-                Communication
-              </h3>
-              <p className="text-body-md font-body-md text-tertiary group-hover:text-surface transition-colors leading-relaxed">
-                Stratégie de marque, relations publiques, audit de positionnement et branding institutionnel.
-              </p>
-            </div>
-          </Link>
-
-          {/* Marketing */}
-          <Link
-            href="/services"
-            className="md:col-span-1 lg:col-span-1 lg:row-span-1 bg-on-surface p-6 sm:p-8 md:p-10 flex flex-col justify-between group min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
-          >
-            <div className="flex justify-between items-start">
-              <span className="material-symbols-outlined text-primary text-4xl">
-                trending_up
-              </span>
-              <span className="font-label-bold text-label-bold text-surface">
-                02
-              </span>
-            </div>
-            <div className="my-6 w-full overflow-hidden">
-              <img
-                alt="Conception stratégique et Marketing Pro Live Agency"
-                className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_3.jpg"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-headline-md text-surface mb-3 uppercase group-hover:text-primary transition-colors">
-                Marketing
-              </h3>
-              <p className="text-body-md font-body-md text-surface-variant leading-relaxed">
-                Analyse de données, campagnes d&apos;acquisition à fort impact et pilotage du ROI.
-              </p>
-            </div>
-          </Link>
-
-          {/* Digital */}
-          <Link
-            href="/services"
-            className="md:col-span-1 lg:col-span-1 lg:row-span-1 border-2 border-on-surface p-6 sm:p-8 md:p-12 flex flex-col justify-between hover:bg-on-surface hover:text-surface group transition-all duration-300 min-h-[340px] sm:min-h-[420px] min-w-0"
-          >
-            <div className="flex justify-between items-start">
-              <span className="material-symbols-outlined text-primary text-4xl">
-                web
-              </span>
-              <span className="font-label-bold text-label-bold text-on-surface group-hover:text-surface transition-colors">
-                03
-              </span>
-            </div>
-            <div className="my-6 w-full overflow-hidden">
-              <img
-                alt="Création numérique et Digital Pro Live Agency"
-                className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_6.jpg"
-              />
-            </div>
-            <div className="mt-4">
-              <h3 className="text-2xl sm:text-3xl font-headline-md text-on-surface group-hover:text-surface mb-3 uppercase transition-colors">
-                Digital
-              </h3>
-              <p className="text-body-md font-body-md text-tertiary group-hover:text-surface transition-colors leading-relaxed">
-                Développement web haute performance, UX/UI design sur-mesure et stratégies sociales, Design graphique et applications mobiles
-              </p>
-            </div>
-          </Link>
-
           {/* Événementiel */}
           <Link
             href="/services"
-            className="md:col-span-2 lg:col-span-2 lg:row-span-1 bg-surface-container border-2 border-surface/10 p-6 sm:p-8 md:p-12 flex flex-col justify-between hover:bg-primary group transition-all duration-500 min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
+            className="md:col-span-2 lg:col-span-4 lg:row-span-1 bg-surface-container border-2 border-surface/10 p-6 sm:p-8 md:p-12 flex flex-col justify-between hover:bg-primary group transition-all duration-500 min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
           >
             <div className="flex justify-between items-start">
               <span className="material-symbols-outlined text-primary group-hover:text-surface text-4xl transition-colors">
                 festival
               </span>
               <span className="font-label-bold text-label-bold text-on-surface group-hover:text-surface transition-colors">
-                04
+                01
               </span>
             </div>
             <div className="my-6 w-full overflow-hidden">
@@ -194,7 +104,37 @@ export default function Home() {
                 Événementiel
               </h3>
               <p className="text-body-md font-body-md text-tertiary group-hover:text-surface transition-colors leading-relaxed">
-                Conception et production d'évènements de prestige, coordination, logistique & technique, management artisique, accompagnement et développement
+                Conception et production d&apos;évènements de prestige, coordination, logistique & technique, management artisique, accompagnement et développement
+              </p>
+            </div>
+          </Link>
+
+          {/* Hôtesses et hôtes de luxes */}
+          <Link
+            href="/services"
+            className="md:col-span-1 lg:col-span-2 lg:row-span-1 bg-neutral-800 p-6 sm:p-8 md:p-10 flex flex-col justify-between group min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
+          >
+            <div className="flex justify-between items-start">
+              <span className="material-symbols-outlined text-primary text-4xl">
+                groups
+              </span>
+              <span className="font-label-bold text-label-bold text-surface">
+                02
+              </span>
+            </div>
+            <div className="my-6 w-full overflow-hidden">
+              <img
+                alt="Hôtesses et hôtes de luxes Pro Live Agency"
+                className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                src="/images/image_12.jpg"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl sm:text-3xl font-headline-md text-surface mb-3 uppercase group-hover:text-primary transition-colors">
+                Accueil d'excellence, image et représentation corporate
+              </h3>
+              <p className="text-body-md font-body-md text-surface-variant leading-relaxed">
+                Hôtesses et Hôtes de luxe
               </p>
             </div>
           </Link>
@@ -202,14 +142,14 @@ export default function Home() {
           {/* Audiovisuel */}
           <Link
             href="/services"
-            className="md:col-span-1 lg:col-span-1 lg:row-span-1 bg-surface-container-highest p-6 sm:p-8 md:p-10 flex flex-col justify-between hover:bg-primary group transition-all duration-500 min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
+            className="md:col-span-1 lg:col-span-2 lg:row-span-1 bg-surface-container-highest p-6 sm:p-8 md:p-10 flex flex-col justify-between hover:bg-primary group transition-all duration-500 min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
           >
             <div className="flex justify-between items-start">
               <span className="material-symbols-outlined text-primary group-hover:text-surface text-4xl transition-colors">
                 movie
               </span>
               <span className="font-label-bold text-label-bold text-on-surface group-hover:text-surface transition-colors">
-                05
+                03
               </span>
             </div>
             <div className="my-6 w-full overflow-hidden">
@@ -224,37 +164,67 @@ export default function Home() {
                 Audiovisuel
               </h3>
               <p className="text-body-md font-body-md text-tertiary group-hover:text-surface transition-colors leading-relaxed">
-                Captation  & production, vidéo et photos, contenus, émissions, montage et post-production.
+                Captation  & production, vidéo et photos, montage et post-production, contenus, émissions.
               </p>
             </div>
           </Link>
 
-          {/* Hôtesses et hôtes de luxes */}
+          {/* Digital */}
           <Link
             href="/services"
-            className="md:col-span-1 lg:col-span-1 lg:row-span-1 bg-on-surface p-6 sm:p-8 md:p-10 flex flex-col justify-between group min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
+            className="md:col-span-2 lg:col-span-2 lg:row-span-1 border-2 border-on-surface p-6 sm:p-8 md:p-12 flex flex-col justify-between hover:bg-on-surface hover:text-surface group transition-all duration-300 min-h-[340px] sm:min-h-[420px] min-w-0"
           >
             <div className="flex justify-between items-start">
               <span className="material-symbols-outlined text-primary text-4xl">
-                groups
+                web
               </span>
-              <span className="font-label-bold text-label-bold text-surface">
-                06
+              <span className="font-label-bold text-label-bold text-on-surface group-hover:text-surface transition-colors">
+                04
               </span>
             </div>
             <div className="my-6 w-full overflow-hidden">
               <img
-                alt="Hôtesses et hôtes de luxes Pro Live Agency"
+                alt="Création numérique et Digital Pro Live Agency"
                 className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_12.jpg"
+                src="/images/image_6.jpg"
               />
             </div>
-            <div>
-              <h3 className="text-2xl sm:text-3xl font-headline-md text-surface mb-3 uppercase group-hover:text-primary transition-colors">
-                Hôtesses et hôtes de luxes
+            <div className="mt-4">
+              <h3 className="text-2xl sm:text-3xl font-headline-md text-on-surface group-hover:text-surface mb-3 uppercase transition-colors">
+                Digital
               </h3>
-              <p className="text-body-md font-body-md text-surface-variant leading-relaxed">
-                Accueil d&apos;Excellence, image & représentation
+              <p className="text-body-md font-body-md text-tertiary group-hover:text-surface transition-colors leading-relaxed">
+                Marketing, Développement web haute performance, UX/UI design sur-mesure et stratégies sociales, Design graphique et applications mobiles
+              </p>
+            </div>
+          </Link>
+
+          {/* Communication */}
+          <Link
+            href="/services"
+            className="md:col-span-2 lg:col-span-2 lg:row-span-1 bg-surface-container-high p-6 sm:p-8 md:p-12 flex flex-col justify-between hover:bg-primary group transition-all duration-500 min-h-[340px] sm:min-h-[420px] shadow-sm min-w-0"
+          >
+            <div className="flex justify-between items-start">
+              <span className="material-symbols-outlined text-primary group-hover:text-surface text-4xl transition-colors">
+                campaign
+              </span>
+              <span className="font-label-bold text-label-bold text-on-surface group-hover:text-surface transition-colors">
+                05
+              </span>
+            </div>
+            <div className="my-6 w-full overflow-hidden">
+              <img
+                alt="Studio et équipe Pro Live Agency en action - Communication"
+                className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                src="/images/image_1.jpg"
+              />
+            </div>
+            <div className="mt-4">
+              <h3 className="text-2xl sm:text-3xl font-headline-md text-on-surface group-hover:text-surface mb-3 uppercase transition-colors">
+                Relations publiques
+              </h3>
+              <p className="text-body-md font-body-md text-tertiary group-hover:text-surface transition-colors leading-relaxed">
+                Relations avec les médias, Gestion de l'e-réputation, Communication de crise, Recherche de partenariats, Stratégie de communication institutionnelle.
               </p>
             </div>
           </Link>

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Agence Marketing & Communication Digitale : Nos Services",
   description:
-    "Découvrez nos 4 expertises clés à Paris : Stratégie de Marque & Communication, Acquisition Tech & SEO / SEA (Agence Marketing), Création de sites Web sur-mesure (Agence de Communication Digitale) et Production Live Événementielle 4K.",
+    "Découvrez nos 5 expertises clés à Paris : Événementiel, Hôtesses, Audiovisuel, Digital et Communication.",
   keywords: [
     "agence marketing services",
     "agence de communication digitale services",
@@ -55,152 +55,8 @@ export default function ServicesPage() {
       {/* Services Bento Grid */}
       <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
-          {/* Communication (Col 1-7) */}
-          <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <span className="material-symbols-outlined text-4xl text-primary">
-                  campaign
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
-                  Communication
-                </h2>
-              </div>
-              <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
-                Définir une voix unique et influente. Nous élaborons des stratégies de
-                communication percutantes et ciblées pour positionner votre marque comme
-                leader incontesté sur son marché.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
-                  <div>
-                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
-                      Stratégie de Marque
-                    </h3>
-                    <p className="text-sm text-tertiary leading-normal">
-                      Analyse de marché, audit complet et positionnement concurrentiel affirmé.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
-                  <div>
-                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
-                      Branding &amp; Identité
-                    </h3>
-                    <p className="text-sm text-tertiary leading-normal">
-                      Design de logotype, charte graphique éditoriale et direction visuelle 360°.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12">
-              <Link
-                href="/contact"
-                className="w-full sm:w-auto inline-block border-2 border-on-surface px-8 py-3 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all uppercase tracking-wider text-center"
-              >
-                En savoir plus
-              </Link>
-            </div>
-          </div>
-
-          {/* Digital (Col 8-12) */}
-          <div className="lg:col-span-5 bg-on-surface text-surface p-6 sm:p-8 md:p-12 hover-lift flex flex-col justify-between min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <span className="material-symbols-outlined text-4xl text-primary">
-                  devices
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
-                  Digital
-                </h2>
-              </div>
-              <ul className="space-y-8">
-                <li>
-                  <span className="text-primary font-label-bold text-label-bold block mb-2 uppercase tracking-widest text-sm">
-                    DÉVELOPPEMENT WEB & APPS
-                  </span>
-                  <p className="text-base sm:text-lg text-surface-variant leading-relaxed">
-                    Sites vitrines immersifs, plateformes e-commerce sur-mesure et applications web ultra-rapides.
-                  </p>
-                </li>
-                <li>
-                  <span className="text-primary font-label-bold text-label-bold block mb-2 uppercase tracking-widest text-sm">
-                    SOCIAL MEDIA & CONTENT
-                  </span>
-                  <p className="text-base sm:text-lg text-surface-variant leading-relaxed">
-                    Direction de contenu, gestion d&apos;écosystème communautaire et campagnes virales.
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div className="mt-12 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-              <Link
-                href="/contact"
-                className="w-full sm:w-auto inline-block bg-primary text-on-primary px-8 py-3 font-label-bold text-label-bold hover:bg-primary-container transition-all uppercase tracking-wider shadow-md text-center"
-              >
-                Lancer un projet
-              </Link>
-              <span
-                className="hidden sm:block material-symbols-outlined text-6xl opacity-20"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                bolt
-              </span>
-            </div>
-          </div>
-
-          {/* Marketing (Col 1-5) */}
-          <div className="lg:col-span-5 bg-surface-container p-6 sm:p-8 md:p-12 hover-lift flex flex-col justify-between border-b-4 border-on-surface min-h-0 sm:min-h-[460px] shadow-sm min-w-0">
-            <div className="relative overflow-hidden group">
-              <div className="flex items-center gap-4 mb-8">
-                <span className="material-symbols-outlined text-4xl text-primary">
-                  trending_up
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
-                  Marketing
-                </h2>
-              </div>
-              <div className="my-6 aspect-[16/9] w-full overflow-hidden rounded-none">
-                <img
-                  alt="Stratégie et données marketing en direct"
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80"
-                />
-              </div>
-              <div className="space-y-6 mb-8">
-                <div>
-                  <h3 className="font-label-bold text-label-bold uppercase mb-2">
-                    Marketing Digital (SEO / SEA)
-                  </h3>
-                  <p className="text-base text-tertiary leading-relaxed">
-                    Acquisition ciblée, Google Ads, référencement naturel haute visibilité et automatisation marketing.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-label-bold text-label-bold uppercase mb-2">
-                    Opérationnel & terrain
-                  </h3>
-                  <p className="text-base text-tertiary leading-relaxed">
-                    Activation de marque en point de vente et campagnes expérientielles directes.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-8">
-              <Link
-                href="/contact"
-                className="w-full sm:w-auto inline-block border-2 border-on-surface px-8 py-3 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all uppercase tracking-wider text-center"
-              >
-                Demander un audit
-              </Link>
-            </div>
-          </div>
-
           {/* Événementiel (Col 6-12) */}
-          <div className="lg:col-span-7 relative group overflow-hidden hover-lift bg-primary min-h-0 sm:min-h-[460px] shadow-sm min-w-0 flex flex-col justify-between">
+          <div className="lg:col-span-12 relative group overflow-hidden hover-lift bg-primary min-h-0 sm:min-h-[460px] shadow-sm min-w-0 flex flex-col justify-between">
             <div className="absolute inset-0 z-0">
               <div
                 className="w-full h-full object-cover opacity-35 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 bg-cover bg-center"
@@ -208,7 +64,6 @@ export default function ServicesPage() {
                   backgroundImage: `url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1400&q=80')`,
                 }}
               ></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
             </div>
             <div className="relative z-10 p-6 sm:p-8 md:p-12 text-on-primary h-full flex flex-col justify-between">
               <div>
@@ -226,10 +81,10 @@ export default function ServicesPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-black/40 border border-white/10 p-5 backdrop-blur-md">
                     <h3 className="font-label-bold text-on-primary text-lg mb-1 uppercase tracking-wide">
-                      Captation
+                      Évènement
                     </h3>
                     <p className="text-sm text-on-primary/80">
-                      Live streaming UHD &amp; régie multi-caméras
+                      concerts, galas, salons et expos
                     </p>
                   </div>
                   <div className="bg-black/40 border border-white/10 p-5 backdrop-blur-md">
@@ -269,106 +124,6 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Audiovisuel (Col 1-7) */}
-          <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
-            <div>
-              <div className="flex items-center gap-4 mb-8">
-                <span className="material-symbols-outlined text-4xl text-primary">
-                  movie
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
-                  Audiovisuel
-                </h2>
-              </div>
-              <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
-                Captation vidéo 4K, réalisation cinématographique et post-production de prestige. Nous concevons et réalisons des contenus audiovisuels percutants adaptés à votre stratégie de communication.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
-                  <div>
-                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
-                      Captation Multi-caméras
-                    </h3>
-                    <p className="text-sm text-tertiary">
-                      Enregistrement UHD et régie vidéo en direct
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
-                  <div>
-                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
-                      Réalisation Cinéma
-                    </h3>
-                    <p className="text-sm text-tertiary">
-                      Clips institutionnels, films d&apos;entreprise &amp; publicités
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
-                  <div>
-                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
-                      Post-Production
-                    </h3>
-                    <p className="text-sm text-tertiary">
-                      Montage, étalonnage professionnel et sound design
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
-                  <div>
-                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
-                      Motion Design
-                    </h3>
-                    <p className="text-sm text-tertiary">
-                      Animations 2D/3D et habillages dynamiques
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12 pt-8 border-t border-on-surface/10 flex items-center justify-between flex-wrap gap-4">
-              <span className="font-label-bold text-label-bold uppercase tracking-widest text-primary">
-                Production • Captation • Studio
-              </span>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 font-label-bold text-label-bold text-on-surface hover:text-primary transition-colors"
-              >
-                DISCUTER DE VOTRE PROJET AUDIOVISUEL <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </Link>
-            </div>
-          </div>
-
-          <div className="lg:col-span-5 bg-surface-container-highest p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0 border border-on-surface/5">
-            <div className="flex justify-between items-start mb-8">
-              <span className="material-symbols-outlined text-4xl text-primary">
-                videocam
-              </span>
-              <span className="text-6xl md:text-7xl font-headline-lg text-on-surface/10 font-bold">
-                05
-              </span>
-            </div>
-            <div className="my-6 w-full overflow-hidden">
-              <img
-                alt="Audiovisuel et production vidéo Pro Live Agency"
-                className="w-full h-auto object-contain"
-                src="/images/image_8.jpg"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl sm:text-2xl font-headline-md uppercase mb-2">
-                Excellence Visuelle
-              </h3>
-              <p className="text-sm text-tertiary">
-                Des moyens techniques d&apos;exception pour sublimer votre image de marque sur tous les écrans.
-              </p>
-            </div>
-          </div>
-
           {/* Hôtesses et hôtes de luxes (Col 1-5 Box / 6-12 Details) */}
           <div className="lg:col-span-5 bg-on-surface text-surface p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
             <div className="flex justify-between items-start mb-8">
@@ -376,7 +131,7 @@ export default function ServicesPage() {
                 groups
               </span>
               <span className="text-6xl md:text-7xl font-headline-lg text-surface/10 font-bold">
-                06
+                02
               </span>
             </div>
             <div className="my-6 w-full overflow-hidden">
@@ -468,7 +223,204 @@ export default function ServicesPage() {
               </Link>
             </div>
           </div>
-        </div>
+{/* Audiovisuel (Col 1-7) */}
+          <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="material-symbols-outlined text-4xl text-primary">
+                  movie
+                </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
+                  Audiovisuel
+                </h2>
+              </div>
+              <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
+                Captation vidéo 4K, réalisation cinématographique et post-production de prestige. Nous concevons et réalisons des contenus audiovisuels percutants adaptés à votre stratégie de communication.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Captation Multi-caméras
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Enregistrement UHD et régie vidéo en direct
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Réalisation Cinéma
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Clips institutionnels, films d&apos;entreprise &amp; publicités
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Post-Production
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Montage, étalonnage professionnel et sound design
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Motion Design
+                    </h3>
+                    <p className="text-sm text-tertiary">
+                      Animations 2D/3D et habillages dynamiques
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-12 pt-8 border-t border-on-surface/10 flex items-center justify-between flex-wrap gap-4">
+              <span className="font-label-bold text-label-bold uppercase tracking-widest text-primary">
+                Production • Captation • Studio
+              </span>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 font-label-bold text-label-bold text-on-surface hover:text-primary transition-colors"
+              >
+                DISCUTER DE VOTRE PROJET AUDIOVISUEL <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 bg-surface-container-highest p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0 border border-on-surface/5">
+            <div className="flex justify-between items-start mb-8">
+              <span className="material-symbols-outlined text-4xl text-primary">
+                videocam
+              </span>
+              <span className="text-6xl md:text-7xl font-headline-lg text-on-surface/10 font-bold">
+                03
+              </span>
+            </div>
+            <div className="my-6 w-full overflow-hidden">
+              <img
+                alt="Audiovisuel et production vidéo Pro Live Agency"
+                className="w-full h-auto object-contain"
+                src="/images/image_8.jpg"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-headline-md uppercase mb-2">
+                Excellence Visuelle
+              </h3>
+              <p className="text-sm text-tertiary">
+                Des moyens techniques d&apos;exception pour sublimer votre image de marque sur tous les écrans.
+              </p>
+            </div>
+          </div>
+
+          {/* Digital (Col 8-12) */}
+          <div className="lg:col-span-5 bg-on-surface text-surface p-6 sm:p-8 md:p-12 hover-lift flex flex-col justify-between min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="material-symbols-outlined text-4xl text-primary">
+                  devices
+                </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
+                  Digital
+                </h2>
+              </div>
+              <ul className="space-y-8">
+                <li>
+                  <span className="text-primary font-label-bold text-label-bold block mb-2 uppercase tracking-widest text-sm">
+                    DÉVELOPPEMENT WEB & APPS
+                  </span>
+                  <p className="text-base sm:text-lg text-surface-variant leading-relaxed">
+                    Sites vitrines immersifs, plateformes e-commerce sur-mesure et applications web ultra-rapides.
+                  </p>
+                </li>
+                <li>
+                  <span className="text-primary font-label-bold text-label-bold block mb-2 uppercase tracking-widest text-sm">
+                    SOCIAL MEDIA & CONTENT
+                  </span>
+                  <p className="text-base sm:text-lg text-surface-variant leading-relaxed">
+                    Direction de contenu, gestion d&apos;écosystème communautaire et campagnes virales.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className="mt-12 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+              <Link
+                href="/contact"
+                className="w-full sm:w-auto inline-block bg-primary text-on-primary px-8 py-3 font-label-bold text-label-bold hover:bg-primary-container transition-all uppercase tracking-wider shadow-md text-center"
+              >
+                Lancer un projet
+              </Link>
+              <span
+                className="hidden sm:block material-symbols-outlined text-6xl opacity-20"
+                style={{ fontVariationSettings: "'FILL' 1" }}
+              >
+                bolt
+              </span>
+            </div>
+          </div>
+
+          {/* Communication (Col 1-7) */}
+          <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="material-symbols-outlined text-4xl text-primary">
+                  campaign
+                </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
+                  Communication
+                </h2>
+              </div>
+              <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
+                Définir une voix unique et influente. Nous élaborons des stratégies de
+                communication percutantes et ciblées pour positionner votre marque comme
+                leader incontesté sur son marché.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Stratégie de Marque
+                    </h3>
+                    <p className="text-sm text-tertiary leading-normal">
+                      Analyse de marché, audit complet et positionnement concurrentiel affirmé.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 bg-primary mt-2 shrink-0"></div>
+                  <div>
+                    <h3 className="font-label-bold text-label-bold uppercase mb-1">
+                      Branding &amp; Identité
+                    </h3>
+                    <p className="text-sm text-tertiary leading-normal">
+                      Design de logotype, charte graphique éditoriale et direction visuelle 360°.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-12">
+              <Link
+                href="/contact"
+                className="w-full sm:w-auto inline-block border-2 border-on-surface px-8 py-3 font-label-bold text-label-bold hover:bg-on-surface hover:text-surface transition-all uppercase tracking-wider text-center"
+              >
+                En savoir plus
+              </Link>
+            </div>
+          </div>
+
+                  </div>
       </section>
     </main>
   );

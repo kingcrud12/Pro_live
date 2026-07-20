@@ -8,12 +8,11 @@ interface ServicesTextMarqueeProps {
 
 export default function ServicesTextMarquee({ className = "" }: ServicesTextMarqueeProps) {
   const items = [
-    "Communication",
-    "Marketing",
-    "Création numérique",
-    "Audiovisuel",
     "Événementiel",
     "Hôtesses et hôtes de luxes",
+    "Audiovisuel",
+    "Création numérique",
+    "Communication",
   ];
 
   const content = items.join(" • ") + " • ";

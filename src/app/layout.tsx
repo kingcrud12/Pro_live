@@ -24,14 +24,6 @@ export const metadata: Metadata = {
     default: "PRO LIVE. AGENCY | Agence Marketing & de Communication Digitale Paris",
     template: "%s | PRO LIVE. AGENCY",
   },
-  icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/images/logo.svg", type: "image/svg+xml" },
-    ],
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
-  },
   description:
     "PRO LIVE. AGENCY est votre agence de communication digitale et agence marketing à Paris. Spécialistes en stratégie de marque, acquisition de trafic à fort ROI, création de sites web haute performance et production événementielle live 4K.",
   keywords: [

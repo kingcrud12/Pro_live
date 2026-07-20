@@ -1,4 +1,5 @@
-"use client";
+with open("src/components/AgencyCarousel.tsx", "w") as f:
+    f.write('''"use client";
 
 import React, { useState, useEffect } from "react";
 
@@ -15,7 +16,7 @@ export default function AgencyCarousel() {
     // Section 1: Événementiel (Indices 0, 1)
     {
       id: "img-10",
-      src: "/images/image_9.jpg",
+      src: "/images/image_10.jpg",
       alt: "Dispositif événementiel et direction artistique sur mesure - Vue 9",
       title: "Événementiel",
       sectionIndex: 0,
@@ -125,8 +126,9 @@ export default function AgencyCarousel() {
           return (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-all duration-1000 ease-in-out flex items-center justify-center overflow-hidden bg-on-surface/95 ${isActive ? "opacity-100 z-10 scale-100" : "opacity-0 z-0 scale-105"
-                }`}
+              className={`absolute inset-0 transition-all duration-1000 ease-in-out flex items-center justify-center overflow-hidden bg-on-surface/95 ${
+                isActive ? "opacity-100 z-10 scale-100" : "opacity-0 z-0 scale-105"
+              }`}
             >
               {/* Blurred background image to fill extra space around object-contain with ambient color */}
               <img
@@ -193,10 +195,11 @@ export default function AgencyCarousel() {
                 onClick={() => setCurrentIndex(sec.startIndex)}
                 aria-label={`Aller à la section ${sec.name}`}
                 title={sec.name}
-                className={`transition-all duration-300 h-2 rounded-full focus:outline-none ${active
+                className={`transition-all duration-300 h-2 rounded-full focus:outline-none ${
+                  active
                     ? "w-8 bg-primary shadow-sm"
                     : "w-2 bg-white/60 hover:bg-white"
-                  }`}
+                }`}
               />
             );
           })}
@@ -205,3 +208,4 @@ export default function AgencyCarousel() {
     </div>
   );
 }
+''')
