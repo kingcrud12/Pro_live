@@ -112,27 +112,14 @@ export default function ContactPage() {
             </div>
             <div className="bg-surface-container p-6 sm:p-8 border border-on-surface/10 flex flex-col justify-between min-h-[160px] sm:h-52 gap-4 shadow-sm">
               <span className="material-symbols-outlined text-primary text-4xl">
-                call
+                alternate_email
               </span>
               <div>
                 <p className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest mb-1 text-xs">
-                  Téléphone
+                  Email
                 </p>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-headline-md">
-                  +33 (0)1 42 68 55 00
-                </h3>
-              </div>
-            </div>
-            <div className="bg-surface-container p-6 sm:p-8 border border-on-surface/10 flex flex-col justify-between min-h-[160px] sm:h-52 gap-4 shadow-sm">
-              <span className="material-symbols-outlined text-primary text-4xl">
-                location_on
-              </span>
-              <div>
-                <p className="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest mb-1 text-xs">
-                  Adresse Studio & Bureaux
-                </p>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-headline-md leading-snug">
-                  12 RUE DE LA CRÉATION, 75008 PARIS
+                  Info@pro-live-agency.com
                 </h3>
               </div>
             </div>
