@@ -11,8 +11,8 @@ export default function Home() {
           <div className="lg:col-span-5 xl:col-span-5 space-y-5 sm:space-y-6 z-10 min-w-0">
             <div className="space-y-3.5">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[54px] font-display-lg leading-[1.12] uppercase text-on-surface tracking-tight break-words">
-                Donner vie à vos <span className="text-primary">idées,</span> <br />
-                créer des expériences <span className="text-primary">mémorables.</span>
+                Le luxe ne suit pas <span className="text-primary">les règles il les crée,</span> <br />
+                Le futur du prestige <span className="text-primary">se vit au présent.</span>
               </h1>
             </div>
           </div>
@@ -20,7 +20,7 @@ export default function Home() {
           <div className="lg:col-span-7 xl:col-span-7 relative w-full transition-all duration-700 pt-4 lg:pt-0">
             <div className="relative w-full">
               <img
-                alt="Donner vie à vos idées, créer des expériences mémorables - Pro Live Agency"
+                alt="Le luxe ne suit pas les règles il les crée. Le futur du prestige se vit au pésent"
                 className="w-full h-auto object-contain shadow-2xl border border-on-surface/15 bg-surface-container/30 transition-transform duration-500 hover:scale-[1.01]"
                 src="/images/hero.jpg"
               />

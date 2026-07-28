@@ -17,7 +17,6 @@ export default function AgencyCarousel() {
       id: "img-10",
       src: "/images/image_9.jpg",
       alt: "Dispositif événementiel et direction artistique sur mesure - Vue 9",
-      title: "Événementiel",
       sectionIndex: 0,
     },
     {
@@ -32,7 +31,6 @@ export default function AgencyCarousel() {
       id: "img-12",
       src: "/images/image_12.jpg",
       alt: "Dispositif événementiel et direction artistique sur mesure - Vue 11",
-      title: "Hôtesses et hôtes de luxes",
       sectionIndex: 1,
     },
 
@@ -41,7 +39,6 @@ export default function AgencyCarousel() {
       id: "img-8",
       src: "/images/image_8.jpg",
       alt: "Dispositif événementiel et direction artistique sur mesure - Vue 7",
-      title: "Audiovisuel",
       sectionIndex: 2,
     },
     {
@@ -56,7 +53,6 @@ export default function AgencyCarousel() {
       id: "img-6",
       src: "/images/image_6.jpg",
       alt: "Dispositif événementiel et direction artistique sur mesure - Vue 5",
-      title: "Création numérique",
       sectionIndex: 3,
     },
     {
@@ -71,7 +67,6 @@ export default function AgencyCarousel() {
       id: "img-1",
       src: "/images/image_1.jpg",
       alt: "Studio et équipe Pro Live Agency en action - Vue 1",
-      title: "Communication",
       sectionIndex: 4,
     },
     {
@@ -194,8 +189,8 @@ export default function AgencyCarousel() {
                 aria-label={`Aller à la section ${sec.name}`}
                 title={sec.name}
                 className={`transition-all duration-300 h-2 rounded-full focus:outline-none ${active
-                    ? "w-8 bg-primary shadow-sm"
-                    : "w-2 bg-white/60 hover:bg-white"
+                  ? "w-8 bg-primary shadow-sm"
+                  : "w-2 bg-white/60 hover:bg-white"
                   }`}
               />
             );

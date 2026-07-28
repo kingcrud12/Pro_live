@@ -19,7 +19,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: "lancement plateforme TickEazy",
-    category: "ÉVÉNEMENTIEL",
+    category: "DIGITAL",
     categoryLabel: "Événementiel / Audiovisuel",
     title: "Lancement de la plateforme TickEazy",
     image:
@@ -44,15 +44,27 @@ const projects: Project[] = [
   },
   {
     id: "evenement-corporate",
-    category: "COMMUNICATION",
-    categoryLabel: "Communication Corporate",
+    category: "ÉVÉNEMENTIEL",
+    categoryLabel: "Événementiel Corporate",
     title: "Sommet International de l'Innovation",
     image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80",
+      "/images/gala_leadx.jpg",
     alt: "Scène et écrans géants lors d'une conférence internationale",
     span: "md:col-span-1 lg:col-span-4",
     aspectRatio: "aspect-square",
     link: "/realisations/evenement-corporate",
+  },
+  {
+    id: "gala-prestige",
+    category: "ÉVÉNEMENTIEL",
+    categoryLabel: "Soirée de Gala",
+    title: "Soirée de Gala d'Exception",
+    image:
+      "/images/gala_500.jpg",
+    alt: "Ambiance de soirée de gala",
+    span: "md:col-span-1 lg:col-span-4",
+    aspectRatio: "aspect-[4/5]",
+    link: "/realisations/gala-prestige",
   },
   {
     id: "production-live",
@@ -60,7 +72,7 @@ const projects: Project[] = [
     categoryLabel: "Captation / Montage",
     title: "Production Live Stream Multi-Cam",
     image:
-      "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1400&q=80",
+      "/images/gala_african.jpg",
     alt: "Caméra cinéma de plateau sur grue en tournage direct",
     span: "md:col-span-2 lg:col-span-8",
     aspectRatio: "aspect-[16/8]",
@@ -106,14 +118,11 @@ const projects: Project[] = [
 ];
 
 export default function RealisationsPage() {
-  const [filter, setFilter] = useState<string>("TOUT");
+  const [filter, setFilter] = useState<string>("ÉVÉNEMENTIEL");
 
-  const filteredProjects =
-    filter === "TOUT"
-      ? projects
-      : projects.filter((p) => p.category === filter);
+  const filteredProjects = projects.filter((p) => p.category === filter);
 
-  const filterTabs = ["TOUT", "COMMUNICATION", "DIGITAL", "ÉVÉNEMENTIEL"];
+  const filterTabs = ["ÉVÉNEMENTIEL", "COMMUNICATION", "DIGITAL"];
 
   return (
     <div className="bg-surface text-on-surface font-body-md overflow-x-hidden w-full">
@@ -128,8 +137,10 @@ export default function RealisationsPage() {
               Nos <span className="text-primary">Réalisations</span>.
             </h1>
             <p className="text-lg sm:text-xl font-body-lg text-tertiary max-w-2xl leading-relaxed">
-              Découvrez comment nous donnons vie aux ambitions les plus audacieuses. Une sélection de
-              projets alliant stratégie, créativité d&apos;exception et maîtrise technique haute précision.
+              Revivez l'intensité de nos plus beaux projets. <br />
+              Chez Pro-live agency, chaque évènement est pensé pour marquer les esprits et transofmer l'éphemère en empreinte durable. <br />
+              Plongez au coeur de nos réalisations.
+
             </p>
           </div>
           <div className="flex flex-wrap gap-2 sm:gap-4 pt-2 lg:pt-0 shrink-0 w-full lg:w-auto">
@@ -152,18 +163,16 @@ export default function RealisationsPage() {
         </div>
       </header>
 
-      {/* Bento Portfolio Grid */}
+      {/* Portfolio Grid */}
       <main className="px-4 sm:px-6 md:px-16 pb-16 sm:pb-24 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className={`${project.span} group cursor-pointer overflow-hidden relative kinetic-hover min-w-0`}
+              className="group cursor-pointer overflow-hidden relative kinetic-hover min-w-0"
             >
-              <div
-                className={`${project.aspectRatio} bg-surface-container overflow-hidden relative shadow-sm`}
-              >
-                <Link href={project.link} target="_blank" rel="noopener noreferrer">
+              <div className="aspect-square bg-surface-container overflow-hidden relative shadow-sm">
+                <Link href={project.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0">
                   <img
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     src={project.image}
@@ -177,12 +186,12 @@ export default function RealisationsPage() {
                     <span className="text-primary font-label-bold text-xs sm:text-sm uppercase tracking-wider block">
                       {project.categoryLabel}
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-headline-md uppercase mt-1 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-headline-md uppercase mt-2 group-hover:text-primary transition-colors leading-tight">
                       {project.title}
                     </h3>
                   </div>
                   {project.featured && (
-                    <span className="material-symbols-outlined text-on-surface text-4xl group-hover:translate-x-2 transition-transform shrink-0">
+                    <span className="material-symbols-outlined text-on-surface text-3xl sm:text-4xl group-hover:translate-x-2 transition-transform shrink-0">
                       north_east
                     </span>
                   )}

@@ -62,7 +62,7 @@ export default function Footer() {
                 href="/services"
                 className="text-base text-surface/80 hover:text-primary transition-colors"
               >
-                Communication
+                Relations publiques
               </Link>
             </div>
 
@@ -99,13 +99,6 @@ export default function Footer() {
 
             {/* Column 3: Contact & Social */}
             <div className="flex flex-col gap-3 min-w-0">
-              <span className="text-label-bold font-label-bold text-primary uppercase tracking-widest text-xs">
-                STUDIO PARIS
-              </span>
-              <p className="text-sm text-surface/80 leading-relaxed">
-                12 Rue de l&apos;ingénieur robert keller<br />
-                75015 Paris, France
-              </p>
               <a
                 href="mailto:Info@pro-live-agency.com"
                 className="text-sm text-primary hover:underline font-label-bold mt-1 block"
