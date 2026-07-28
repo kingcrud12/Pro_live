@@ -112,6 +112,12 @@ export default function Footer() {
               >
                 Info@pro-live-agency.com
               </a>
+              <a
+                href="mailto:Info@pro-live-agency.fr"
+                className="text-sm text-primary hover:underline font-label-bold mt-1 block"
+              >
+                Info@pro-live-agency.fr
+              </a>
               <div className="flex gap-4 pt-2">
                 <Link
                   href="/contact"

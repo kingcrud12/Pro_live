@@ -119,7 +119,7 @@ export default function ContactPage() {
                   Email
                 </p>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-headline-md">
-                  Info@pro-live-agency.com
+                  Info@pro-live-agency.fr
                 </h3>
               </div>
             </div>
