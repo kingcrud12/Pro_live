@@ -46,7 +46,7 @@ const projects: Project[] = [
     id: "evenement-corporate",
     category: "ÉVÉNEMENTIEL",
     categoryLabel: "Événementiel Corporate",
-    title: "Sommet International de l'Innovation",
+    title: "Rendez-vous annuel international des jeunes leaders",
     image:
       "/images/gala_leadx.jpg",
     alt: "Scène et écrans géants lors d'une conférence internationale",
@@ -58,7 +58,7 @@ const projects: Project[] = [
     id: "gala-prestige",
     category: "ÉVÉNEMENTIEL",
     categoryLabel: "Soirée de Gala",
-    title: "Soirée de Gala d'Exception",
+    title: "Le sommet des icônes africaines. Une seule Afrique.500 leaders. une nuit d'exception",
     image:
       "/images/gala_500.jpg",
     alt: "Ambiance de soirée de gala",
@@ -70,7 +70,7 @@ const projects: Project[] = [
     id: "production-live",
     category: "ÉVÉNEMENTIEL",
     categoryLabel: "Captation / Montage",
-    title: "Production Live Stream Multi-Cam",
+    title: "Le grand gala de l'élegance Africaine",
     image:
       "/images/gala_african.jpg",
     alt: "Caméra cinéma de plateau sur grue en tournage direct",
