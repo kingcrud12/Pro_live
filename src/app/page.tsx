@@ -12,7 +12,6 @@ export default function Home() {
             <div className="space-y-3.5">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[54px] font-display-lg leading-[1.12] uppercase text-on-surface tracking-tight break-words">
                 Le luxe ne suit pas <span className="text-primary">les règles il les crée,</span> <br />
-                Le futur du prestige <span className="text-primary">se vit au présent.</span>
               </h1>
             </div>
           </div>

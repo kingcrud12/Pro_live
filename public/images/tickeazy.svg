@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FAFAFA" />
+  
+  <g transform="translate(190, 150)">
+    <!-- Icon Background -->
+    <rect x="0" y="0" width="60" height="60" rx="16" fill="#FF5A28" />
+    
+    <!-- Ticket Outline -->
+    <path d="
+      M 16 18
+      L 44 18
+      A 4 4 0 0 1 48 22
+      L 48 25
+      A 5 5 0 0 0 48 35
+      L 48 38
+      A 4 4 0 0 1 44 42
+      L 16 42
+      A 4 4 0 0 1 12 38
+      L 12 35
+      A 5 5 0 0 0 12 25
+      L 12 22
+      A 4 4 0 0 1 16 18
+      Z
+    " stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linejoin="round" />
+    
+    <!-- Ticket Dashed Line -->
+    <line x1="30" y1="20" x2="30" y2="40" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 6" />
+    
+    <!-- Text -->
+    <text x="75" y="44" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="44" fill="#1A1A1A" letter-spacing="-1.5">Tick<tspan fill="#FF5A28">Eazy</tspan></text>
+  </g>
+</svg>

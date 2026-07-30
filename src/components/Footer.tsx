@@ -19,7 +19,7 @@ export default function Footer() {
                 <Logo className="h-14 sm:h-18 md:h-20 w-auto" variant="light" />
               </Link>
               <p className="text-lg sm:text-xl font-body-lg text-surface/90 mt-4 max-w-md leading-relaxed">
-                Donner vie à vos idées, créer des expériences mémorables.
+                Le futur du prestige se vit au présent.
               </p>
               <p className="text-sm text-surface/60 mt-3 max-w-sm leading-normal">
                 Stratégies de communication percutantes, création de marque et productions événementielles haute précision.

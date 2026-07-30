@@ -223,7 +223,7 @@ export default function ServicesPage() {
               </Link>
             </div>
           </div>
-{/* Audiovisuel (Col 1-7) */}
+          {/* Audiovisuel (Col 1-7) */}
           <div className="lg:col-span-7 bg-surface-container border-l-4 border-primary p-6 sm:p-8 md:p-12 flex flex-col justify-between hover-lift min-h-0 sm:min-h-[440px] shadow-sm min-w-0">
             <div>
               <div className="flex items-center gap-4 mb-8">
@@ -377,7 +377,7 @@ export default function ServicesPage() {
                   campaign
                 </span>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
-                  Communication
+                  Relations publiques
                 </h2>
               </div>
               <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
@@ -420,7 +420,7 @@ export default function ServicesPage() {
             </div>
           </div>
 
-                  </div>
+        </div>
       </section>
     </main>
   );

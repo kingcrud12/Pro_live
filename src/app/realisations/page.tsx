@@ -5,7 +5,7 @@ import Link from "next/link";
 
 interface Project {
   id: string;
-  category: "COMMUNICATION" | "DIGITAL" | "ÉVÉNEMENTIEL";
+  category: "RELATIONS PUBLIQUES" | "DIGITAL" | "ÉVÉNEMENTS";
   categoryLabel: string;
   title: string;
   image: string;
@@ -23,7 +23,7 @@ const projects: Project[] = [
     categoryLabel: "Événementiel / Audiovisuel",
     title: "Lancement de la plateforme TickEazy",
     image:
-      "/images/tickeazy.png",
+      "/images/tickeazy.svg",
     alt: "Scénographie et lumière pour lancement de la plateforme TickEazy",
     span: "md:col-span-2 lg:col-span-8",
     aspectRatio: "aspect-[16/9]",
@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     id: "evenement-corporate",
-    category: "ÉVÉNEMENTIEL",
+    category: "ÉVÉNEMENTS",
     categoryLabel: "Événementiel Corporate",
     title: "Rendez-vous annuel international des jeunes leaders",
     image:
@@ -56,7 +56,7 @@ const projects: Project[] = [
   },
   {
     id: "gala-prestige",
-    category: "ÉVÉNEMENTIEL",
+    category: "ÉVÉNEMENTS",
     categoryLabel: "Soirée de Gala",
     title: "Le sommet des icônes africaines. Une seule Afrique.500 leaders. une nuit d'exception",
     image:
@@ -68,7 +68,7 @@ const projects: Project[] = [
   },
   {
     id: "production-live",
-    category: "ÉVÉNEMENTIEL",
+    category: "ÉVÉNEMENTS",
     categoryLabel: "Captation / Montage",
     title: "Le grand gala de l'élegance Africaine",
     image:
@@ -81,7 +81,7 @@ const projects: Project[] = [
   },
   {
     id: "affichage-urbain",
-    category: "COMMUNICATION",
+    category: "RELATIONS PUBLIQUES",
     categoryLabel: "Affichage Urbain",
     title: "Campagne Out-Of-Home Éco-Responsable",
     image:
@@ -93,7 +93,7 @@ const projects: Project[] = [
   },
   {
     id: "branding-beta",
-    category: "COMMUNICATION",
+    category: "RELATIONS PUBLIQUES",
     categoryLabel: "Branding & Direction Visuelle",
     title: "Identité de Marque Haute Horlogerie",
     image:
@@ -118,11 +118,11 @@ const projects: Project[] = [
 ];
 
 export default function RealisationsPage() {
-  const [filter, setFilter] = useState<string>("ÉVÉNEMENTIEL");
+  const [filter, setFilter] = useState<string>("ÉVÉNEMENTS");
 
   const filteredProjects = projects.filter((p) => p.category === filter);
 
-  const filterTabs = ["ÉVÉNEMENTIEL", "COMMUNICATION", "DIGITAL"];
+  const filterTabs = ["ÉVÉNEMENTS", "RELATIONS PUBLIQUES", "DIGITAL"];
 
   return (
     <div className="bg-surface text-on-surface font-body-md overflow-x-hidden w-full">
