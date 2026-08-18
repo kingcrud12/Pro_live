@@ -21,7 +21,7 @@ export default function Home() {
               <img
                 alt="Le luxe ne suit pas les règles il les crée. Le futur du prestige se vit au pésent"
                 className="w-full h-auto object-contain shadow-2xl border border-on-surface/15 bg-surface-container/30 transition-transform duration-500 hover:scale-[1.01]"
-                src="/images/hero.jpg"
+                src="/images/home.jpg"
               />
               {/* Accent Boxes */}
               <div className="absolute -bottom-6 -left-6 bg-primary w-28 h-28 hidden sm:block shadow-xl -z-10 transition-transform duration-500"></div>

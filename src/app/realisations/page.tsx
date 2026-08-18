@@ -20,8 +20,8 @@ const projects: Project[] = [
   {
     id: "lancement plateforme TickEazy",
     category: "DIGITAL",
-    categoryLabel: "Événementiel / Audiovisuel",
-    title: "Lancement de la plateforme TickEazy",
+    categoryLabel: "Plateforme de billeterie",
+    title: "Lancement de TickEazy",
     image:
       "/images/tickeazy.svg",
     alt: "Scénographie et lumière pour lancement de la plateforme TickEazy",
@@ -31,16 +31,16 @@ const projects: Project[] = [
     link: "https://tickeazy.fr",
   },
   {
-    id: "campagne-digitale",
+    id: "malea",
     category: "DIGITAL",
-    categoryLabel: "Marketing Digital",
-    title: "Campagne d'Acquisition Tech",
+    categoryLabel: "Application de Géolocalisation",
+    title: "Malea",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
-    alt: "Analyse et pilotage de campagne digitale haute performance",
+      "/images/malea.svg",
+    alt: "Logo Malea",
     span: "md:col-span-1 lg:col-span-4",
     aspectRatio: "aspect-[4/5]",
-    link: "https://tickeazy.fr",
+    link: "#",
   },
   {
     id: "evenement-corporate",

@@ -14,75 +14,51 @@ export default function AgencyCarousel() {
   const slides: Slide[] = [
     // Section 1: Événementiel (Indices 0, 1)
     {
-      id: "img-10",
-      src: "/images/image_9.jpg",
-      alt: "Dispositif événementiel et direction artistique sur mesure - Vue 9",
-      sectionIndex: 0,
-    },
-    {
-      id: "img-11",
-      src: "/images/image_11.jpg",
-      alt: "Dispositif événementiel et direction artistique sur mesure - Vue 10",
+      id: "img-2",
+      src: "/images/762905e8-734a-4655-b707-a1c068ac3f5f.JPG",
+      alt: "Événementiel 2",
       sectionIndex: 0,
     },
 
     // Section 2: Hôtesses et hôtes de luxes (Index 2)
     {
-      id: "img-12",
-      src: "/images/image_12.jpg",
-      alt: "Dispositif événementiel et direction artistique sur mesure - Vue 11",
+      id: "img-3",
+      src: "/images/b583bcfb-0781-4d68-8f42-cb2c328e8cec.JPG",
+      alt: "Hôtesses et hôtes de luxes",
       sectionIndex: 1,
     },
 
-    // Section 3: Audiovisuel (Indices 3, 4)
+    // Section 3: Audiovisuel (Index 3)
     {
-      id: "img-8",
-      src: "/images/image_8.jpg",
-      alt: "Dispositif événementiel et direction artistique sur mesure - Vue 7",
-      sectionIndex: 2,
-    },
-    {
-      id: "img-9",
-      src: "/images/image_9.jpg",
-      alt: "Dispositif événementiel et direction artistique sur mesure - Vue 8",
+      id: "img-4",
+      src: "/images/ec9de1bd-7bb6-43d4-af52-1dfed1ec5f60.JPG",
+      alt: "Audiovisuel",
       sectionIndex: 2,
     },
 
-    // Section 4: Création numérique (Indices 5, 6)
+    // Section 4: Création numérique (Index 4)
+    {
+      id: "img-5",
+      src: "/images/1a5c3164-95c5-410f-b150-4aabe9b80894.JPG",
+      alt: "Création numérique",
+      sectionIndex: 3,
+    },
+
+    // Section 5: Communication (Indices 5, 6)
     {
       id: "img-6",
-      src: "/images/image_6.jpg",
-      alt: "Dispositif événementiel et direction artistique sur mesure - Vue 5",
-      sectionIndex: 3,
-    },
-    {
-      id: "img-7",
-      src: "/images/image_7.jpg",
-      alt: "Dispositif événementiel et direction artistique sur mesure - Vue 6",
-      sectionIndex: 3,
-    },
-
-    // Section 5: Communication (Indices 7, 8)
-    {
-      id: "img-1",
-      src: "/images/image_1.jpg",
-      alt: "Studio et équipe Pro Live Agency en action - Vue 1",
+      src: "/images/4f910d93-521a-4db7-8928-daa830487369.JPG",
+      alt: "Communication 1",
       sectionIndex: 4,
-    },
-    {
-      id: "img-2",
-      src: "/images/image_2.jpg",
-      alt: "Production live et création d'expérience mémorable - Vue 2",
-      sectionIndex: 4,
-    },
+    }
   ];
 
   const sections = [
     { name: "Événementiel", startIndex: 0 },
     { name: "Hôtesses et hôtes de luxes", startIndex: 2 },
     { name: "Audiovisuel", startIndex: 3 },
-    { name: "Création numérique", startIndex: 5 },
-    { name: "Communication", startIndex: 7 },
+    { name: "Création numérique", startIndex: 4 },
+    { name: "Communication", startIndex: 5 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -135,7 +111,7 @@ export default function AgencyCarousel() {
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="relative z-0 max-w-full max-h-full w-full h-full object-contain transition-transform duration-700"
+                className="relative z-0 max-w-full max-h-full w-full h-full object-cover transition-transform duration-700"
               />
 
               {/* Keyword text overlay directly over first images of duos (No box/frame, No pôles, No dark screen) */}
