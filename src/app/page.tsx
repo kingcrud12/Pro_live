@@ -95,7 +95,7 @@ export default function Home() {
               <img
                 alt="Événementiel et production live Pro Live Agency"
                 className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_9.jpg"
+                src="/images/spectacle.jpg"
               />
             </div>
             <div className="mt-4">

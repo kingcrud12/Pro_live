@@ -14,7 +14,7 @@ export default function AgencyCarousel() {
   const slides: Slide[] = [
     // Section 1: Événementiel (Indices 0, 1)
     {
-      id: "img-2",
+      id: "img-1",
       src: "/images/762905e8-734a-4655-b707-a1c068ac3f5f.JPG",
       alt: "Événementiel 2",
       sectionIndex: 0,
@@ -22,7 +22,7 @@ export default function AgencyCarousel() {
 
     // Section 2: Hôtesses et hôtes de luxes (Index 2)
     {
-      id: "img-3",
+      id: "img-2",
       src: "/images/b583bcfb-0781-4d68-8f42-cb2c328e8cec.JPG",
       alt: "Hôtesses et hôtes de luxes",
       sectionIndex: 1,
@@ -30,10 +30,18 @@ export default function AgencyCarousel() {
 
     // Section 3: Audiovisuel (Index 3)
     {
-      id: "img-4",
+      id: "img-3",
       src: "/images/ec9de1bd-7bb6-43d4-af52-1dfed1ec5f60.JPG",
       alt: "Audiovisuel",
       sectionIndex: 2,
+    },
+
+    // Section 1: Événementiel (Indices 0, 1)
+    {
+      id: "img-4",
+      src: "/images/info.jpg",
+      alt: "Événementiel 2",
+      sectionIndex: 0,
     },
 
     // Section 4: Création numérique (Index 4)
@@ -47,7 +55,7 @@ export default function AgencyCarousel() {
     // Section 5: Communication (Indices 5, 6)
     {
       id: "img-6",
-      src: "/images/4f910d93-521a-4db7-8928-daa830487369.JPG",
+      src: "/images/home.jpg",
       alt: "Communication 1",
       sectionIndex: 4,
     }
