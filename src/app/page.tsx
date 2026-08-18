@@ -125,7 +125,7 @@ export default function Home() {
               <img
                 alt="Hôtesses et hôtes de luxes Pro Live Agency"
                 className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_12.jpg"
+                src="/images/accueil.jpg"
               />
             </div>
             <div>
@@ -155,7 +155,7 @@ export default function Home() {
               <img
                 alt="Production Audiovisuelle et Captation Pro Live Agency"
                 className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_8.jpg"
+                src="/images/audiovisuel.jpg"
               />
             </div>
             <div>
@@ -185,7 +185,7 @@ export default function Home() {
               <img
                 alt="Création numérique et Digital Pro Live Agency"
                 className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_6.jpg"
+                src="/images/info.jpg"
               />
             </div>
             <div className="mt-4">
@@ -215,7 +215,7 @@ export default function Home() {
               <img
                 alt="Studio et équipe Pro Live Agency en action - Communication"
                 className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
-                src="/images/image_1.jpg"
+                src="/images/rp.jpg"
               />
             </div>
             <div className="mt-4">
