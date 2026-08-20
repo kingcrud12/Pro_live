@@ -21,7 +21,11 @@ export const metadata: Metadata = {
     title: "Agence Marketing & Communication Digitale : Nos Services | PRO LIVE",
     description:
       "Quatre pôles d'excellence dédiés à votre croissance : Communication Corporate, Marketing Digital ROI, Développement Web et Spectacle Live.",
-    url: "https://www.prolive.agency/services",
+    url: "https://www.pro-live-agency.com/services",
+  },
+  robots: {
+    index: false,
+    follow: true,
   },
 };
 
@@ -138,7 +142,7 @@ export default function ServicesPage() {
               <img
                 alt="Hôtesses et hôtes de luxes VIP Pro Live Agency"
                 className="w-full h-auto object-contain"
-                src="/images/image_12.jpg"
+                src="/images/ec9de1bd-7bb6-43d4-af52-1dfed1ec5f60.JPG"
               />
             </div>
             <div>
@@ -310,7 +314,7 @@ export default function ServicesPage() {
               <img
                 alt="Audiovisuel et production vidéo Pro Live Agency"
                 className="w-full h-auto object-contain"
-                src="/images/image_8.jpg"
+                src="/images/audiovisuel.jpg"
               />
             </div>
             <div>
@@ -333,6 +337,13 @@ export default function ServicesPage() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
                   Digital
                 </h2>
+              </div>
+              <div className="my-6 w-full overflow-hidden">
+                <img
+                  alt="Digital Pro Live Agency"
+                  className="w-full h-auto object-cover rounded-md"
+                  src="/images/info.jpg"
+                />
               </div>
               <ul className="space-y-8">
                 <li>
@@ -379,6 +390,13 @@ export default function ServicesPage() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-headline-md uppercase">
                   Relations publiques
                 </h2>
+              </div>
+              <div className="my-6 w-full overflow-hidden">
+                <img
+                  alt="Relations publiques Pro Live Agency"
+                  className="w-full h-auto object-cover rounded-md"
+                  src="/images/rp.jpg"
+                />
               </div>
               <p className="text-lg font-body-md text-tertiary mb-12 max-w-xl leading-relaxed">
                 Définir une voix unique et influente. Nous élaborons des stratégies de

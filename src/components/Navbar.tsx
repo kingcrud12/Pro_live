@@ -29,7 +29,7 @@ export default function Navbar() {
           className="flex items-center shrink-0 hover:opacity-90 transition-opacity"
           aria-label="PRO LIVE. AGENCY - Accueil"
         >
-          <Logo className="h-10 sm:h-12 md:h-14 w-auto" variant="dark" />
+          <Logo className="h-16 sm:h-20 md:h-24 w-auto object-contain" variant="dark" />
         </Link>
 
         {/* Desktop Navigation */}

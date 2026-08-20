@@ -17,7 +17,11 @@ export const metadata: Metadata = {
     title: "Portfolio & Références : Agence Marketing & Communication Digitale | PRO LIVE",
     description:
       "Une sélection d'études de cas alliant stratégie digitale, créativité d'exception et maîtrise technique haute précision.",
-    url: "https://www.prolive.agency/realisations",
+    url: "https://www.pro-live-agency.com/realisations",
+  },
+  robots: {
+    index: false,
+    follow: true,
   },
 };
 

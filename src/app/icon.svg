@@ -1,31 +1,18 @@
-<svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 240 100"
-      aria-label="PRO LIVE. AGENCY Logo"
-      fill="none"
-    >
-      <text
-        x="120"
-        y="50"
-        fontFamily="sans-serif"
-        fontWeight="bold"
-        fontSize="48"
-        textAnchor="middle"
-      >
-        <tspan fill="#D4AF37">PRO</tspan>
-        <tspan fill="#1A1C1C"> LIVE</tspan>
-        <tspan fill="#D4AF37">.</tspan>
-      </text>
-      <text
-        x="120"
-        y="80"
-        fontFamily="sans-serif"
-        fontWeight="bold"
-        fontSize="18"
-        letterSpacing="6"
-        fill="#D4AF37"
-        textAnchor="middle"
-      >
-        - AGENCY -
-      </text>
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .live-text { fill: #1a1c1c; }
+    @media (prefers-color-scheme: dark) {
+      .live-text { fill: #ffffff; }
+    }
+  </style>
+  <text x="50" y="44" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="900" fontSize="38" fill="#D4AF37" textAnchor="middle">
+    PRO
+  </text>
+  <text x="50" y="80" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="900" fontSize="38" textAnchor="middle">
+    <tspan className="live-text">LIVE</tspan>
+    <tspan fill="#D4AF37">.</tspan>
+  </text>
+  <text x="50" y="95" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="bold" fontSize="10" letterSpacing="1.5" fill="#D4AF37" textAnchor="middle">
+    - AGENCY -
+  </text>
+</svg>

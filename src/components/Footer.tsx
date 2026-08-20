@@ -16,7 +16,7 @@ export default function Footer() {
                 className="inline-block hover:opacity-90 transition-opacity mb-2"
                 aria-label="PRO LIVE. AGENCY - Accueil"
               >
-                <Logo className="h-14 sm:h-18 md:h-20 w-auto" variant="light" />
+                <Logo className="h-20 sm:h-24 md:h-32 w-auto object-contain" variant="light" />
               </Link>
               <p className="text-lg sm:text-xl font-body-lg text-surface/90 mt-4 max-w-md leading-relaxed">
                 Le futur du prestige se vit au présent.

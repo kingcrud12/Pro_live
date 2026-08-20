@@ -17,7 +17,11 @@ export const metadata: Metadata = {
     title: "Contact & Devis : Agence Marketing & de Communication Digitale Paris | PRO LIVE",
     description:
       "Discutons de vos ambitions sous 24h : Stratégie de Marque, Acquisition ROI Marketing, Développement Web et Spectacle Live.",
-    url: "https://www.prolive.agency/contact",
+    url: "https://www.pro-live-agency.com/contact",
+  },
+  robots: {
+    index: false,
+    follow: true,
   },
 };
 

@@ -19,10 +19,10 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.prolive.agency"),
+  metadataBase: new URL("https://www.pro-live-agency.com"),
   title: {
-    default: "PRO LIVE. AGENCY | Agence Marketing & de Communication Digitale Paris",
-    template: "%s | PRO LIVE. AGENCY",
+    default: "Agence d'évenementiel",
+    template: "%s | Agence d'évenementiel",
   },
   description:
     "PRO LIVE. AGENCY est votre agence de communication digitale et agence marketing à Paris. Spécialistes en stratégie de marque, acquisition de trafic à fort ROI, création de sites web haute performance et production événementielle live 4K.",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "création site web paris",
     "agence seo sea paris",
   ],
-  authors: [{ name: "PRO LIVE DIGITAL AGENCY", url: "https://www.prolive.agency" }],
+  authors: [{ name: "PRO LIVE DIGITAL AGENCY", url: "https://www.pro-live-agency.com" }],
   creator: "PRO LIVE DIGITAL AGENCY",
   publisher: "PRO LIVE DIGITAL AGENCY",
   alternates: {
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://www.prolive.agency",
-    title: "PRO LIVE. AGENCY | Agence Marketing & de Communication Digitale Paris",
+    url: "https://www.pro-live-agency.com",
+    title: "Agence d'évenementiel",
     description:
       "Propulsez votre marque avec une stratégie marketing percutante, une communication digitale d'excellence et des productions événementielles spectaculaires.",
     siteName: "PRO LIVE DIGITAL AGENCY",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PRO LIVE. AGENCY | Agence Marketing & de Communication Digitale",
+    title: "Agence d'évenementiel",
     description:
       "Agence créative et technique haute performance à Paris : Stratégie digitale, ROI Marketing, Web & Événementiel.",
     images: ["/images/hero.jpg"],
@@ -98,9 +98,9 @@ export default function RootLayout({
     "@type": "ProfessionalService",
     name: "PRO LIVE DIGITAL AGENCY",
     alternateName: "PRO LIVE AGENCY",
-    url: "https://www.prolive.agency",
-    logo: "https://www.prolive.agency/icon.svg",
-    image: "https://www.prolive.agency/images/hero.jpg",
+    url: "https://www.pro-live-agency.com",
+    logo: "https://www.pro-live-agency.com/icon.svg",
+    image: "https://www.pro-live-agency.com/images/hero.jpg",
     description:
       "Agence marketing et agence de communication digitale basée à Paris. Nous accompagnons les entreprises dans leur stratégie de marque, leurs campagnes d'acquisition digitales et leurs productions événementielles prestige.",
     telephone: "+33142685500",
