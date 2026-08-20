@@ -5,7 +5,7 @@ import Logo from "./Logo";
 export default function Footer() {
   return (
     <footer className="bg-on-surface text-surface-variant w-full mt-auto border-t border-surface/10 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16 pt-12 sm:pt-20 pb-8 sm:pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pt-12 sm:pt-20 pb-8 sm:pb-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-surface/15">
           {/* Brand & Tagline */}
@@ -16,7 +16,7 @@ export default function Footer() {
                 className="inline-block hover:opacity-90 transition-opacity mb-2"
                 aria-label="PRO LIVE. AGENCY - Accueil"
               >
-                <Logo className="h-20 sm:h-24 md:h-32 w-auto object-contain" variant="light" />
+                <Logo className="h-16 sm:h-20 md:h-24 w-auto object-contain" variant="light" />
               </Link>
               <p className="text-lg sm:text-xl font-body-lg text-surface/90 mt-4 max-w-md leading-relaxed">
                 Le futur du prestige se vit au présent.

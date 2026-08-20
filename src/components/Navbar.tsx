@@ -23,13 +23,13 @@ export default function Navbar() {
 
   return (
     <header className="bg-surface border-b border-outline-variant flex flex-col justify-between items-center w-full sticky top-0 z-50">
-      <div className="w-full flex justify-between items-center px-4 sm:px-6 md:px-16 py-4 mx-auto max-w-7xl">
+      <div className="w-full flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 mx-auto max-w-7xl">
         <Link
           href="/"
           className="flex items-center shrink-0 hover:opacity-90 transition-opacity"
           aria-label="PRO LIVE. AGENCY - Accueil"
         >
-          <Logo className="h-16 sm:h-20 md:h-24 w-auto object-contain" variant="dark" />
+          <Logo className="h-12 sm:h-14 md:h-16 w-auto object-contain" variant="dark" />
         </Link>
 
         {/* Desktop Navigation */}

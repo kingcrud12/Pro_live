@@ -115,13 +115,13 @@ export default function RealisationsPage() {
   return (
     <div className="bg-surface text-on-surface font-body-md overflow-x-hidden w-full">
       {/* Page Header */}
-      <header className="pt-16 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 md:px-16 max-w-7xl mx-auto">
+      <header className="pt-16 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 sm:gap-10 w-full">
           <div className="w-full lg:w-auto flex-1 max-w-3xl min-w-0">
             <p className="text-primary font-label-bold text-label-bold mb-3 uppercase tracking-widest">
               Portefeuille & Références
             </p>
-            <h1 className="font-display-lg text-4xl sm:text-6xl md:text-[76px] uppercase leading-none mb-6 tracking-tight break-words">
+            <h1 className="font-display-lg text-4xl sm:text-5xl md:text-[60px] uppercase leading-none mb-6 tracking-tight break-words">
               Nos <span className="text-primary">Réalisations</span>.
             </h1>
             <p className="text-lg sm:text-xl font-body-lg text-tertiary max-w-2xl leading-relaxed">
@@ -152,7 +152,7 @@ export default function RealisationsPage() {
       </header>
 
       {/* Portfolio Grid */}
-      <main className="px-4 sm:px-6 md:px-16 pb-16 sm:pb-24 max-w-7xl mx-auto">
+      <main className="px-4 sm:px-6 md:px-8 pb-16 sm:pb-24 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
           {filteredProjects.map((project) => (
             <div
@@ -192,7 +192,7 @@ export default function RealisationsPage() {
       </main>
 
       {/* Call to Action Section */}
-      <section className="bg-on-surface text-surface py-16 sm:py-24 px-4 sm:px-6 md:px-16 overflow-hidden relative">
+      <section className="bg-on-surface text-surface py-12 sm:py-12 px-4 sm:px-6 md:px-8 overflow-hidden relative">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl sm:text-5xl md:text-display-lg font-display-lg uppercase mb-6 leading-tight tracking-tight break-words">
             Prêt à marquer les <span className="text-primary">esprits</span> ?

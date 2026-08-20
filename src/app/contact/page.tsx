@@ -74,10 +74,10 @@ export default function ContactPage() {
   return (
     <main className="pt-8 w-full bg-surface overflow-x-hidden">
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 md:px-16 py-14 sm:py-20 bg-surface-container-lowest max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-8 py-14 sm:py-14 bg-surface-container-lowest max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 sm:gap-8">
           <div className="w-full lg:w-2/3 min-w-0">
-            <h1 className="text-4xl sm:text-6xl md:text-[76px] font-display-lg text-on-surface uppercase leading-none tracking-tight break-words">
+            <h1 className="text-4xl sm:text-5xl md:text-[60px] font-display-lg text-on-surface uppercase leading-none tracking-tight break-words">
               PARLONS DE<br />
               <span className="text-primary">VOTRE PROJET.</span>
             </h1>
@@ -92,7 +92,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Grid (Bento Style) */}
-      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
           {/* Info Column */}
           <div className="lg:col-span-5 flex flex-col gap-4 sm:gap-6 min-w-0">
@@ -155,7 +155,7 @@ export default function ContactPage() {
 
             {formSubmitted ? (
               <div className="bg-primary/10 border-l-4 border-primary p-8 my-8 text-center space-y-4">
-                <span className="material-symbols-outlined text-primary text-6xl">
+                <span className="material-symbols-outlined text-primary text-5xl">
                   check_circle
                 </span>
                 <h3 className="text-3xl font-headline-md text-on-surface uppercase">
@@ -254,7 +254,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-12 max-w-7xl mx-auto">
         <div className="relative h-[380px] sm:h-[500px] md:h-[580px] w-full grayscale hover:grayscale-0 transition-all duration-700 border border-on-surface/20 overflow-hidden shadow-lg">
           <div className="absolute inset-0 bg-on-surface/10 z-10 pointer-events-none"></div>
           <img
@@ -275,9 +275,9 @@ export default function ContactPage() {
       </section>
 
       {/* Atmosphere Section */}
-      <section className="bg-on-surface py-16 sm:py-24 overflow-hidden relative">
-        <div className="px-4 sm:px-6 md:px-16 relative z-10 flex flex-col items-center text-center">
-          <h2 className="text-3xl sm:text-6xl md:text-[80px] font-display-lg text-surface opacity-10 leading-none select-none mb-6 uppercase tracking-wider break-words">
+      <section className="bg-on-surface py-12 sm:py-12 overflow-hidden relative">
+        <div className="px-4 sm:px-6 md:px-8 relative z-10 flex flex-col items-center text-center">
+          <h2 className="text-3xl sm:text-5xl md:text-[64px] font-display-lg text-surface opacity-10 leading-none select-none mb-6 uppercase tracking-wider break-words">
             KINETIC ENERGY
           </h2>
           <div className="max-w-3xl">

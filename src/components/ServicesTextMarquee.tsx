@@ -21,7 +21,7 @@ export default function ServicesTextMarquee({ className = "" }: ServicesTextMarq
     <div className={`w-full bg-surface-container-low border-y-2 border-on-surface/10 py-6 sm:py-8 overflow-hidden relative select-none shadow-inner ${className}`}>
       {/* Background watermark effect */}
       <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none overflow-hidden">
-        <span className="font-display-lg text-6xl sm:text-8xl md:text-9xl uppercase tracking-tighter whitespace-nowrap text-on-surface">
+        <span className="font-display-lg text-5xl sm:text-8xl md:text-9xl uppercase tracking-tighter whitespace-nowrap text-on-surface">
           {content}
         </span>
       </div>

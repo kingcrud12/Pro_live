@@ -33,12 +33,12 @@ export default function ServicesPage() {
   return (
     <main className="w-full overflow-x-hidden">
       {/* Hero Header */}
-      <section className="px-4 sm:px-6 md:px-16 py-14 sm:py-20 bg-on-surface text-surface relative overflow-hidden">
+      <section className="px-4 sm:px-6 md:px-8 py-14 sm:py-14 bg-on-surface text-surface relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
           <span className="inline-block bg-primary text-on-primary px-4 py-1 font-label-bold text-label-bold mb-6 uppercase tracking-wider">
             DOMINER LE MARCHÉ
           </span>
-          <h1 className="text-4xl sm:text-6xl md:text-[80px] font-display-lg leading-[1.06] mb-8 uppercase tracking-tight break-words">
+          <h1 className="text-4xl sm:text-5xl md:text-[64px] font-display-lg leading-[1.06] mb-8 uppercase tracking-tight break-words">
             NOS SERVICES <br />
             <span className="text-primary">VOTRE IMPACT.</span>
           </h1>
@@ -57,7 +57,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Bento Grid */}
-      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
           {/* Événementiel (Col 6-12) */}
           <div className="lg:col-span-12 relative group overflow-hidden hover-lift bg-primary min-h-0 sm:min-h-[460px] shadow-sm min-w-0 flex flex-col justify-between">
@@ -134,14 +134,14 @@ export default function ServicesPage() {
               <span className="material-symbols-outlined text-4xl text-primary">
                 groups
               </span>
-              <span className="text-6xl md:text-7xl font-headline-lg text-surface/10 font-bold">
+              <span className="text-5xl md:text-5xl font-headline-lg text-surface/10 font-bold">
                 02
               </span>
             </div>
-            <div className="my-6 w-full overflow-hidden">
+            <div className="my-6 w-full aspect-video overflow-hidden">
               <img
                 alt="Hôtesses et hôtes de luxes VIP Pro Live Agency"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-cover"
                 src="/images/ec9de1bd-7bb6-43d4-af52-1dfed1ec5f60.JPG"
               />
             </div>
@@ -306,14 +306,14 @@ export default function ServicesPage() {
               <span className="material-symbols-outlined text-4xl text-primary">
                 videocam
               </span>
-              <span className="text-6xl md:text-7xl font-headline-lg text-on-surface/10 font-bold">
+              <span className="text-5xl md:text-5xl font-headline-lg text-on-surface/10 font-bold">
                 03
               </span>
             </div>
-            <div className="my-6 w-full overflow-hidden">
+            <div className="my-6 w-full aspect-video overflow-hidden">
               <img
                 alt="Audiovisuel et production vidéo Pro Live Agency"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-cover"
                 src="/images/audiovisuel.jpg"
               />
             </div>
@@ -338,10 +338,10 @@ export default function ServicesPage() {
                   Digital
                 </h2>
               </div>
-              <div className="my-6 w-full overflow-hidden">
+              <div className="my-6 w-full aspect-video overflow-hidden rounded-md">
                 <img
                   alt="Digital Pro Live Agency"
-                  className="w-full h-auto object-cover rounded-md"
+                  className="w-full h-full object-cover"
                   src="/images/info.jpg"
                 />
               </div>
@@ -372,7 +372,7 @@ export default function ServicesPage() {
                 Lancer un projet
               </Link>
               <span
-                className="hidden sm:block material-symbols-outlined text-6xl opacity-20"
+                className="hidden sm:block material-symbols-outlined text-5xl opacity-20"
                 style={{ fontVariationSettings: "'FILL' 1" }}
               >
                 bolt
@@ -391,10 +391,10 @@ export default function ServicesPage() {
                   Relations publiques
                 </h2>
               </div>
-              <div className="my-6 w-full overflow-hidden">
+              <div className="my-6 w-full aspect-video overflow-hidden rounded-md">
                 <img
                   alt="Relations publiques Pro Live Agency"
-                  className="w-full h-auto object-cover rounded-md"
+                  className="w-full h-full object-cover"
                   src="/images/rp.jpg"
                 />
               </div>
